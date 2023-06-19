@@ -1,0 +1,6 @@
+.header-area {
+  background: #222222;
+}
+.navbar-expand-lg .navbar-collapse {
+  flex-direction: row-reverse;
+}

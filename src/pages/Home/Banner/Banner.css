@@ -1,0 +1,70 @@
+.banner-area .row {
+  align-items: center;
+  height: 100vh;
+}
+.banner-img img {
+  height: 410px;
+  width: 410px;
+  border-radius: 50%;
+  border: 20px solid #fe5000;
+}
+.banner-text p {
+  position: relative;
+  padding-left: 15px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.banner-text p::after {
+  background-image: linear-gradient(
+    66.87deg,
+    #ff91fa -31.45%,
+    #fa6490 44.59%,
+    #f7d86a 126.96%
+  );
+  content: "";
+  height: 80%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+}
+.col-lg-6.banner-text h3 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.slider-btn {
+  margin: 40px 0;
+}
+.slider-btn button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: 2px solid #007ced;
+  border-radius: 30px;
+  padding: 10px 30px;
+  background-color: #333;
+  box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.78);
+  transition: 0.3s;
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+.banner-social {
+  display: flex;
+}
+.social-icon {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.banner-social li {
+  margin-right: 15px;
+}
+.banner-social li a {
+  color: #818181;
+}
