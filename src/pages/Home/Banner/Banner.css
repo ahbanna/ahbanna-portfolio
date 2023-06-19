@@ -13,6 +13,7 @@
   padding-left: 15px;
   font-size: 18px;
   font-weight: 600;
+  color: #000;
 }
 .banner-text p::after {
   background-image: linear-gradient(
@@ -67,4 +68,7 @@ button a {
 }
 .banner-social li a {
   color: #818181;
+}
+.banner-social svg {
+  color: #000;
 }

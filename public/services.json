@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Website Pro",
+    "description": "Creating responsive, SEO-friendly websites with a professional touch for maximum online visibility.",
+    "icon": "AiOutlineGlobal"
+  },
+  {
+    "id": 2,
+    "title": "E-Commerce",
+    "description": "Power up your sales with an e-commerce platform, equipped with robust features and seamless functionality.",
+    "icon": "AiOutlineShoppingCart"
+  },
+  {
+    "id": 3,
+    "title": "Web Application Development",
+    "description": "Create responsive and interactive user interfaces, integrate APIs, and implement robust backend functionality.",
+    "icon": "AiOutlineCode"
+  },
+  {
+    "id": 4,
+    "title": "API Development and Integration",
+    "description": "Develop secure and well-documented APIs using Express.js and Node.js to enhance streamline data exchange.",
+    "icon": "AiOutlineApi"
+  },
+  {
+    "id": 5,
+    "title": "UI/UX Design",
+    "description": "Conduct user research, design wireframes and prototypes, and implement intuitive navigation and interactions.",
+    "icon": "AiOutlineLayout"
+  },
+  {
+    "id": 6,
+    "title": "Maintenance and Support",
+    "description": "Monitor performance, apply updates and troubleshoot issues to keep website running smoothly.",
+    "icon": "AiOutlineTool"
+  }
+]
