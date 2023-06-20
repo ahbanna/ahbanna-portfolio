@@ -1,0 +1,35 @@
+.skill-area {
+  padding: 40px 0;
+}
+.skill-img {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.skill-item {
+  padding: 50px 10px;
+  border: 1px solid red;
+  border-radius: 100px;
+  width: 100%;
+  text-align: center;
+  margin: 0 10px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  width: 120px;
+  text-align: center;
+}
+.skill-item:hover {
+  border-color: #000;
+}
+.skill-item img {
+  height: 60px;
+  filter: grayscale(1);
+  transition: all 0.4s;
+  margin-bottom: 10px;
+}
+.skill-item:hover img {
+  filter: grayscale(0);
+}
+.skill-item span {
+  font-weight: 500;
+}

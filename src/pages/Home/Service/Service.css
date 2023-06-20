@@ -1,10 +1,24 @@
 .service-area {
   padding: 40px 0;
 }
+.section-title {
+  margin: 30px 0;
+}
+.section-title p {
+  padding: 7px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 1px solid #fe5000;
+  display: inline-block;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
 .section-title h2 {
   font-size: 48px;
   font-weight: 700;
-  margin: 35px 0;
 }
 .all-services {
   display: grid;

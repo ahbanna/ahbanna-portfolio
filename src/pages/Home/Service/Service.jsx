@@ -9,6 +9,7 @@ import {
   AiOutlineTool,
 } from "react-icons/ai";
 import { BsArrowRightCircle } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Service = () => {
   const [services, setServices] = useState([]);
@@ -44,6 +45,7 @@ const Service = () => {
     <div className="service-area">
       <div className="container">
         <div className="section-title">
+          <p>Featured Services</p>
           <h2>My Services</h2>
         </div>
         <div className="all-services">
@@ -52,9 +54,24 @@ const Service = () => {
               {getIconComponent(service.icon)}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              <span className="right-arrow">
-                <BsArrowRightCircle></BsArrowRightCircle>
-              </span>
+              {/* <Link to={`/singleservice/${service.id}`}>
+                <span className="right-arrow">
+                  <BsArrowRightCircle></BsArrowRightCircle>
+                </span>
+              </Link> */}
+              <Link
+                to={`/singleservice/${service.id}`}
+                state={{
+                  title: service.title,
+                  description: service.description,
+                  details: service.details,
+                  serviceId: service.id,
+                }}
+              >
+                <span className="right-arrow">
+                  <BsArrowRightCircle></BsArrowRightCircle>
+                </span>
+              </Link>
             </div>
           ))}
         </div>

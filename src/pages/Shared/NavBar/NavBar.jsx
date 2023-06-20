@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Image, Nav, NavLink, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
 import "./NavBar.css";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
