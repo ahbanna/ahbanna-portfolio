@@ -16,7 +16,7 @@ const NavBar = () => {
             {/* <Nav className="mx-auto"> */}
             <Nav className="ml-auto menu-items">
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/instructors">About Me</NavLink>
+              <NavLink to="/aboutme">About Me</NavLink>
               <NavLink to="/classes">Services</NavLink>
               <NavLink to="/classes">Skill</NavLink>
               <NavLink to="/classes">Blog</NavLink>

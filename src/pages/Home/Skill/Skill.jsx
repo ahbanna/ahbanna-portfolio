@@ -9,6 +9,11 @@ import react from "../../../assets/skills/react.png";
 import nodejs from "../../../assets/skills/nodejs.png";
 import mongodb from "../../../assets/skills/mongodb.png";
 import shopify from "../../../assets/skills/shopify.png";
+import firebase from "../../../assets/skills/firebase.png";
+import git from "../../../assets/skills/git.png";
+import github from "../../../assets/skills/github.png";
+import jquery from "../../../assets/skills/jquery.png";
+import sass from "../../../assets/skills/sass.png";
 const Skill = () => {
   return (
     <div className="skill-area">
@@ -16,8 +21,15 @@ const Skill = () => {
         <div className="section-title">
           <p>Skill</p>
           <h2>My Skills</h2>
+          <div className="section-underline"></div>
         </div>
         <div className="skill-img">
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={figma} alt="" />
+            </div>
+            <span>Figma</span>
+          </div>
           <div className="skill-item">
             <div className="skill-icon">
               <img src={html} alt="" />
@@ -32,9 +44,21 @@ const Skill = () => {
           </div>
           <div className="skill-item">
             <div className="skill-icon">
+              <img src={sass} alt="" />
+            </div>
+            <span>Sass</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
               <img src={js} alt="" />
             </div>
             <span>JS</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={jquery} alt="" />
+            </div>
+            <span>Jquery</span>
           </div>
           <div className="skill-item">
             <div className="skill-icon">
@@ -54,12 +78,25 @@ const Skill = () => {
             </div>
             <span>MongoDB</span>
           </div>
-          {/* <div className="skill-item">
+
+          <div className="skill-item">
             <div className="skill-icon">
-              <img src={figma} alt="" />
+              <img src={firebase} alt="" />
             </div>
-            <span>Figma</span>
-          </div> */}
+            <span>Firebase</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={git} alt="" />
+            </div>
+            <span>Git</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={github} alt="" />
+            </div>
+            <span>Github</span>
+          </div>
           <div className="skill-item">
             <div className="skill-icon">
               <img src={wordpress} alt="" />

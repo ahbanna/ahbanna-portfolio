@@ -1,13 +1,15 @@
 .skill-area {
   padding: 40px 0;
+  background: #1a202c;
 }
 .skill-img {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 15px;
 }
 .skill-item {
   padding: 50px 10px;
-  border: 1px solid red;
+  border: 1px solid #ffffff1a;
   border-radius: 100px;
   width: 100%;
   text-align: center;
@@ -19,7 +21,7 @@
   text-align: center;
 }
 .skill-item:hover {
-  border-color: #000;
+  border-color: #f6f6f6;
 }
 .skill-item img {
   height: 60px;
@@ -32,4 +34,13 @@
 }
 .skill-item span {
   font-weight: 500;
+  color: #999;
+  transition: 0.4s;
+}
+.skill-item:hover span {
+  color: #f6f6f6;
+  transition: 0.4s;
+}
+.skill-area .section-title {
+  color: #f6f6f6;
 }

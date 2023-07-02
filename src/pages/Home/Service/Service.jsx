@@ -47,6 +47,7 @@ const Service = () => {
         <div className="section-title">
           <p>Featured Services</p>
           <h2>My Services</h2>
+          <div className="section-underline"></div>
         </div>
         <div className="all-services">
           {services.map((service) => (
@@ -54,11 +55,6 @@ const Service = () => {
               {getIconComponent(service.icon)}
               <h3>{service.title}</h3>
               <p>{service.description}</p>
-              {/* <Link to={`/singleservice/${service.id}`}>
-                <span className="right-arrow">
-                  <BsArrowRightCircle></BsArrowRightCircle>
-                </span>
-              </Link> */}
               <Link
                 to={`/singleservice/${service.id}`}
                 state={{
@@ -66,6 +62,7 @@ const Service = () => {
                   description: service.description,
                   details: service.details,
                   serviceId: service.id,
+                  image: service.image,
                 }}
               >
                 <span className="right-arrow">

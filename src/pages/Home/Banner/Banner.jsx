@@ -1,7 +1,14 @@
 import React from "react";
 import bannaImg from "../../../assets/banner/banna.jpg";
 import "./Banner.css";
-import { FaTwitter, FaBehance, FaInstagram, FaFacebookF } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaBehance,
+  FaFacebookF,
+  FaDownload,
+  FaGithub,
+} from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
 
 const Banner = () => {
   return (
@@ -17,7 +24,7 @@ const Banner = () => {
             <div class="slider-btn">
               <button>
                 <a className="btn-resume" href="">
-                  Downlaod CV
+                  Get Resume <FaDownload></FaDownload>
                 </a>
               </button>
               <button>
@@ -30,6 +37,16 @@ const Banner = () => {
               <span>Check out my: </span>
               <ul className="social-icon">
                 <li>
+                  <a href="https://github.com/ahbanna">
+                    <FaGithub></FaGithub>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/ahbanna">
+                    <GrLinkedin></GrLinkedin>
+                  </a>
+                </li>
+                <li>
                   <a href="https://www.facebook.com/hasanul.tutul/">
                     <FaFacebookF></FaFacebookF>
                   </a>
@@ -37,11 +54,6 @@ const Banner = () => {
                 <li>
                   <a href="https://twitter.com/home">
                     <FaTwitter></FaTwitter>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/">
-                    <FaInstagram></FaInstagram>
                   </a>
                 </li>
                 <li>

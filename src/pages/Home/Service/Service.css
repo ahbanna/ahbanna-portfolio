@@ -10,15 +10,27 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   border-radius: 30px;
-  border: 1px solid #fe5000;
+  border: 2px solid #fe5000;
   display: inline-block;
-  color: #000;
   font-weight: 700;
   margin-bottom: 5px;
 }
 .section-title h2 {
   font-size: 48px;
   font-weight: 700;
+}
+.section-underline {
+  position: relative;
+  background: red;
+}
+.section-underline::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #72e2ae;
+  position: absolute;
+  border-radius: 50%;
+  animation: swipe 4s linear infinite;
 }
 .all-services {
   display: grid;
