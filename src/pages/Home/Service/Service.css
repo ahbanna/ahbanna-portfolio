@@ -89,3 +89,6 @@ span.right-arrow svg {
 .single-service:hover svg {
   color: #fff;
 }
+.service-area .section-title p {
+  color: #000;
+}

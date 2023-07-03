@@ -18,7 +18,7 @@
 .single-recent-project .open-modal-text {
   color: #000;
   font-weight: 600;
-  background: transparent;
+  background: #fe5000;
   display: inline-block;
   padding: 10px 20px;
   cursor: pointer;
@@ -26,12 +26,13 @@
   position: absolute;
   left: 20px;
   bottom: 0;
-  border: 1px solid #838383;
+  border: 1px solid #fe5000;
 }
 .single-recent-project p:hover {
-  background: #fe5000;
-  border: 1px solid #fe5000;
+  background: transparent;
+  border: 1px solid #838383;
   transition: 0.3s;
+  color: #979797;
 }
 button {
   background: #fe5000;
@@ -42,4 +43,7 @@ button {
 .link-area {
   margin: 15px 0;
   text-align: center;
+}
+.recent-projects-area .section-title p {
+  color: #000;
 }
