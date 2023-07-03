@@ -1,9 +1,10 @@
 .banner-area {
-  background: #1a202c;
+  /* background: #1a202c; */
+  background: #081828;
 }
 .banner-area .row {
   align-items: center;
-  height: 100vh;
+  height: calc(100vh - 68px);
 }
 .banner-img img {
   height: 410px;

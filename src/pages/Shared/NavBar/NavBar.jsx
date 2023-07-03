@@ -9,7 +9,16 @@ const NavBar = () => {
       <Navbar collapseOnSelect expand="lg" variant="dark">
         <Container>
           <NavLink to="/">
-            <Image src="" alt="Sports Camp" width="100" height="40" />
+            {/* <Image src="" alt="Sports Camp" width="100" height="40" /> */}
+            <div class="logo d-flex align-items-center">
+              <div class="logo-symbol">
+                <a href="">B</a>
+              </div>
+              <div class="logo-text">
+                <a href="">Banna</a>
+              </div>
+            </div>
+            {/* TODO: there is a underline below logo */}
           </NavLink>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
@@ -19,7 +28,7 @@ const NavBar = () => {
               <NavLink to="/aboutme">About Me</NavLink>
               <NavLink to="/classes">Services</NavLink>
               <NavLink to="/classes">Skill</NavLink>
-              <NavLink to="/classes">Blog</NavLink>
+              <NavLink to="/classes">Projects</NavLink>
               <NavLink to="/classes">Contact</NavLink>
             </Nav>
           </Navbar.Collapse>

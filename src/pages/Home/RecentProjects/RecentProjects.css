@@ -1,0 +1,45 @@
+.recent-projects-area {
+  padding: 40px 0;
+}
+.all-recent-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+.single-recent-project {
+  text-align: center;
+  position: relative;
+}
+.single-recent-project img {
+  height: 400px;
+  width: 100%;
+}
+
+.single-recent-project .open-modal-text {
+  color: #000;
+  font-weight: 600;
+  background: transparent;
+  display: inline-block;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  border: 1px solid #838383;
+}
+.single-recent-project p:hover {
+  background: #fe5000;
+  border: 1px solid #fe5000;
+  transition: 0.3s;
+}
+button {
+  background: #fe5000;
+  padding: 7px 15px;
+  border: none;
+  margin-right: 10px;
+}
+.link-area {
+  margin: 15px 0;
+  text-align: center;
+}
