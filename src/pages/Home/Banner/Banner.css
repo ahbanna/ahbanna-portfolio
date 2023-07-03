@@ -66,15 +66,35 @@ button a {
   display: flex;
   padding: 0;
 }
-.banner-social li {
-  margin-left: 10px;
+.banner-social li:hover a {
+  background: #fe5000;
+  border: 1px solid #fe5000;
+  transition: 0.3s;
 }
-.banner-social li a {
-  color: #818181;
-}
+
 .banner-social svg {
   color: #f6f6f6;
 }
 .banner-social span {
+  margin-top: 6px;
   color: #f6f6f6;
+  margin-right: 10px;
+}
+
+/*  */
+.social-icon li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icon li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid #eaeaef;
+  text-align: center;
+  line-height: 36px;
+  color: #818181;
 }

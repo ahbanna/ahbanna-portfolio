@@ -1,13 +1,7 @@
 import React from "react";
 import bannaImg from "../../../assets/banner/banna.jpg";
 import "./Banner.css";
-import {
-  FaTwitter,
-  FaBehance,
-  FaFacebookF,
-  FaDownload,
-  FaGithub,
-} from "react-icons/fa";
+import { FaTwitter, FaFacebookF, FaDownload, FaGithub } from "react-icons/fa";
 import { GrLinkedin } from "react-icons/gr";
 
 const Banner = () => {
@@ -23,7 +17,11 @@ const Banner = () => {
             <h3>Full Stack Web Developer</h3>
             <div class="slider-btn">
               <button>
-                <a className="btn-resume" href="">
+                <a
+                  className="btn-resume"
+                  href="/public/Resume of Md. Al Hasanul Banna.pdf"
+                  download
+                >
                   Get Resume <FaDownload></FaDownload>
                 </a>
               </button>
@@ -52,13 +50,8 @@ const Banner = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/home">
+                  <a href="https://twitter.com/a_h_banna">
                     <FaTwitter></FaTwitter>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.behance.net/">
-                    <FaBehance></FaBehance>
                   </a>
                 </li>
               </ul>

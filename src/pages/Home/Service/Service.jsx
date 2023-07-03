@@ -47,7 +47,7 @@ const Service = () => {
         <div className="section-title">
           <p>Featured Services</p>
           <h2>My Services</h2>
-          <div className="section-underline"></div>
+          {/* <div className="section-underline"></div> */}
         </div>
         <div className="all-services">
           {services.map((service) => (

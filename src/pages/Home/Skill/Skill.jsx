@@ -21,7 +21,7 @@ const Skill = () => {
         <div className="section-title">
           <p>Skill</p>
           <h2>My Skills</h2>
-          <div className="section-underline"></div>
+          {/* <div className="section-underline"></div> */}
         </div>
         <div className="skill-img">
           <div className="skill-item">

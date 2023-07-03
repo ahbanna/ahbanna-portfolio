@@ -90,7 +90,7 @@ const SingleService = () => {
               <img src={image} alt="" />
               <h3 className="ss-title">{title}</h3>
               <p>{details}</p>
-              {/* TODO: line break have to apply and other service details should be added */}
+              {/* TODO: line break have to apply*/}
             </div>
           </div>
           <div className="col-lg-4">
