@@ -69,7 +69,17 @@ const NavBar = () => {
               >
                 Projects
               </NavLink>
-              <NavLink to="/classes">Contact</NavLink>
+              <NavLink
+                to="#contact"
+                onClick={() =>
+                  document.getElementById("contact").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+              >
+                Contact
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
