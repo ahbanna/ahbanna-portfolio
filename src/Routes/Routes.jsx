@@ -3,6 +3,7 @@ import Main from "../Layout/Main";
 import Home from "../pages/Home/Home/Home";
 import SingleService from "../pages/Home/SingleService/SingleService";
 import AboutMe from "../pages/AboutMe/AboutMe";
+import Skill from "../pages/Home/Skill/Skill";
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -17,10 +18,14 @@ export const router = createBrowserRouter([
         element: <SingleService></SingleService>,
         // loader: ({ params }) => fetch(`services.json/${params.id}`),
       },
-      {
-        path: "aboutme",
-        element: <AboutMe></AboutMe>,
-      },
+      // {
+      //   path: "aboutme",
+      //   element: <AboutMe></AboutMe>,
+      // },
+      // {
+      //   path: "skill",
+      //   element: <Skill></Skill>,
+      // },
     ],
   },
 ]);

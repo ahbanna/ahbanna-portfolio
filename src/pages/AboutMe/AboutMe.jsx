@@ -7,7 +7,7 @@ import { FaDownload } from "react-icons/fa";
 
 const AboutMe = () => {
   return (
-    <div className="aboutme-area">
+    <div className="aboutme-area" id="about">
       <div className="container">
         <div className="section-title">
           <p>Some Lines About My Self</p>

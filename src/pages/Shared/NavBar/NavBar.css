@@ -1,5 +1,9 @@
 .header-area {
   background: #081828;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .navbar-expand-lg .navbar-collapse {
   flex-direction: row-reverse;
@@ -16,7 +20,7 @@
   padding: 15px;
 }
 .menu-items a.active {
-  color: #fe5000;
+  /* color: #fe5000; */
   font-weight: 600;
 }
 .menu-items a::before {

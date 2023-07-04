@@ -18,7 +18,7 @@ const RecentProjects = () => {
   const handleClose = () => setShowModal(false);
   const handleShow = () => setShowModal(true);
   return (
-    <div className="recent-projects-area">
+    <div className="recent-projects-area" id="recent-projects">
       <div className="container">
         <div className="section-title">
           <p>Passion Projects</p>

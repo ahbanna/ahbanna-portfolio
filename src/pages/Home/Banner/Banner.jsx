@@ -6,7 +6,7 @@ import { GrLinkedin } from "react-icons/gr";
 
 const Banner = () => {
   return (
-    <div className="banner-area">
+    <div className="banner-area" id="banner">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 banner-img">

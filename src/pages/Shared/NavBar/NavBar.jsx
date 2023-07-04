@@ -25,10 +25,50 @@ const NavBar = () => {
             {/* <Nav className="mx-auto"> */}
             <Nav className="ml-auto menu-items">
               <NavLink to="/">Home</NavLink>
-              <NavLink to="/aboutme">About Me</NavLink>
-              <NavLink to="/classes">Services</NavLink>
-              <NavLink to="/classes">Skill</NavLink>
-              <NavLink to="/classes">Projects</NavLink>
+              <NavLink
+                to="#about"
+                onClick={() =>
+                  document.getElementById("about").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+              >
+                About Me
+              </NavLink>
+              <NavLink
+                to="#services"
+                onClick={() =>
+                  document.getElementById("services").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+              >
+                Services
+              </NavLink>
+              <NavLink
+                to="#skill"
+                onClick={() =>
+                  document.getElementById("skill-section").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+              >
+                Skill
+              </NavLink>
+              <NavLink
+                to="#recent-projects"
+                onClick={() =>
+                  document.getElementById("recent-projects").scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  })
+                }
+              >
+                Projects
+              </NavLink>
               <NavLink to="/classes">Contact</NavLink>
             </Nav>
           </Navbar.Collapse>

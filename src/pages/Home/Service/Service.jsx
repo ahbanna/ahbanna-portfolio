@@ -42,7 +42,7 @@ const Service = () => {
   };
 
   return (
-    <div className="service-area">
+    <div className="service-area" id="services">
       <div className="container">
         <div className="section-title">
           <p>Featured Services</p>

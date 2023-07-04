@@ -16,7 +16,7 @@ import jquery from "../../../assets/skills/jquery.png";
 import sass from "../../../assets/skills/sass.png";
 const Skill = () => {
   return (
-    <div className="skill-area">
+    <div className="skill-area" id="skill">
       <div className="container">
         <div className="section-title">
           <p>Skill</p>

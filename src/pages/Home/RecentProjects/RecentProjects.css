@@ -1,5 +1,5 @@
 .recent-projects-area {
-  padding: 40px 0;
+  padding: 80px 0;
 }
 .all-recent-projects {
   display: grid;
@@ -46,4 +46,19 @@ button {
 }
 .recent-projects-area .section-title p {
   color: #000;
+}
+@media only screen and (max-width: 576px) {
+  .recent-projects-area {
+    padding: 15px 0;
+  }
+  .all-recent-projects {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .single-recent-project img {
+    height: 260px;
+  }
+  .single-recent-project .open-modal-text {
+    padding: 7px;
+    font-size: 13px;
+  }
 }

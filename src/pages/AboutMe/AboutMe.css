@@ -1,11 +1,12 @@
 .aboutme-area {
   /* background-color: #1a202c; */
   background-color: #f6f9fc;
-  padding: 40px 0;
-  height: calc(100vh - 70px);
+  padding: 100px 0;
+  /* height: calc(100vh - 70px); */
 }
 .aboutme-area p {
   color: #666;
+  text-align: justify;
 }
 .aboutme-area .react-tabs__tab--selected {
   background: #fe5000;
@@ -71,4 +72,23 @@
 li.react-tabs__tab {
   color: #333;
   font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+  .section-title {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .section-title h2 {
+    font-size: 36px;
+  }
+  .section-title p {
+    padding: 7px 15px;
+  }
+  .about-me-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutme-area {
+    padding: 120px 0 50px 0;
+  }
 }
