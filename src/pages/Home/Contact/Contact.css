@@ -1,0 +1,37 @@
+.contact-area {
+  background: #f6f9fc;
+  padding: 150px 0;
+}
+.contact-form input {
+  border-radius: 0;
+  border: 1px solid #555;
+}
+.contact-form .form-control:focus {
+  border-color: #fe5000;
+  outline: 0;
+  box-shadow: none;
+  font-weight: 600;
+}
+.contact-form button {
+  padding: 10px 39px;
+  background: #fe5000;
+  border: none;
+  border-radius: 0;
+  transition: 0.3s;
+}
+.contact-form button:hover {
+  background: #000;
+  transition: 0.3s;
+}
+.contact-form textarea {
+  border-radius: 0;
+  border: 1px solid #555;
+}
+.contact-area .section-title p {
+  color: #000;
+}
+@media only screen and (max-width: 576px) {
+  .contact-area {
+    padding: 25px 0;
+  }
+}

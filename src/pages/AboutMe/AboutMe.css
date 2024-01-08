@@ -1,0 +1,94 @@
+.aboutme-area {
+  /* background-color: #1a202c; */
+  background-color: #f6f9fc;
+  padding: 100px 0;
+  /* height: calc(100vh - 70px); */
+}
+.aboutme-area p {
+  color: #666;
+  text-align: justify;
+}
+.aboutme-area .react-tabs__tab--selected {
+  background: #fe5000;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 20px;
+}
+.aboutme-area .react-tabs__tab-list {
+  border-bottom: 2px solid #fe5000;
+}
+.aboutme-area .react-tabs {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+.about-me-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 25px 0;
+}
+.about-me-info span {
+  font-weight: 500;
+  color: #333;
+  margin-right: 5px;
+}
+.about-me-info p {
+  margin-bottom: 8px;
+}
+.contact-part {
+  display: flex;
+  margin-bottom: 15px;
+}
+.contact-icon {
+  background: #fe5000;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.contact-icon svg {
+  color: #fff;
+}
+.contact-info span {
+  font-weight: 500;
+  color: #333;
+}
+.contact-info p {
+  margin-bottom: 0px;
+}
+.aboutme-area button {
+  padding: 10px 20px;
+  background: #fe5000;
+  border: none;
+}
+.aboutme-area button:hover {
+  background: #1a202c;
+  transition: 0.3s;
+}
+li.react-tabs__tab {
+  color: #333;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 576px) {
+  .section-title {
+    margin: 20px 0;
+    text-align: center;
+  }
+  .section-title h2 {
+    font-size: 36px;
+  }
+  .section-title p {
+    padding: 7px 15px;
+  }
+  .about-me-info {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutme-area {
+    padding: 120px 0 50px 0;
+  }
+}
