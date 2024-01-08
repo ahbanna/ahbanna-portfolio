@@ -23,7 +23,6 @@ const RecentProjects = () => {
         <div className="section-title">
           <p>Passion Projects</p>
           <h2>My Recent Projects</h2>
-          {/* <div className="section-underline"></div> */}
         </div>
         <div className="all-recent-projects">
           <div className="single-recent-project">
