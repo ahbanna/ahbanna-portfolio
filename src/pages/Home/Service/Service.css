@@ -1,24 +1,6 @@
 .service-area {
   padding: 60px 0;
 }
-.section-title {
-  margin: 30px 0;
-}
-.section-title p {
-  padding: 7px 30px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-radius: 30px;
-  border: 2px solid #fe5000;
-  display: inline-block;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-.section-title h2 {
-  font-size: 48px;
-  font-weight: 700;
-}
 .section-underline {
   position: relative;
   background: red;
@@ -68,7 +50,7 @@
 .single-service:hover h3,
 p,
 svg {
-  color: #fff;
+  /* color: #fff; */
 }
 .single-service svg {
   height: 45px;
@@ -79,7 +61,7 @@ svg {
   color: #6f6f6f;
 }
 .single-service:hover p {
-  color: #fff;
+  /* color: #fff; */
 }
 span.right-arrow svg {
   height: 22px;

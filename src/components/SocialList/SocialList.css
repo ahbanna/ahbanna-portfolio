@@ -1,0 +1,48 @@
+.social-list {
+  display: flex;
+}
+.social-list li:hover a {
+  transition: 0.3s;
+  margin-top: -2px;
+}
+
+.social-list svg {
+  color: #f6f6f6;
+}
+.social-list span {
+  margin-top: 6px;
+  color: #f6f6f6;
+  margin-right: 10px;
+}
+
+.social-list ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+.social-list li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-list li a {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #eaeaef;
+  text-align: center;
+  line-height: 36px;
+  color: #818181;
+  transition: 0.3s;
+}
+.facebook {
+  background: #1877f2;
+}
+.linkedin {
+  background: #1275b1;
+}
+.twitter {
+  background: #1da1f2;
+}

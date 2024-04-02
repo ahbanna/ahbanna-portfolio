@@ -1,9 +1,15 @@
 .header-area {
-  background: #081828;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
+  background: transparent;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+/*  */
+
+.header-area .navbar {
+  display: flex;
+  justify-content: space-between;
 }
 .navbar-expand-lg .navbar-collapse {
   flex-direction: row-reverse;
@@ -75,4 +81,48 @@
   font-weight: 600;
   color: #fff;
   text-decoration: none;
+}
+
+.header-area.active {
+  background: red;
+  transition: 0.5s;
+}
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*  */
+/* Add styles for hamburger icon and hide the menu items by default */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .menu-items {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 100;
+    transition: 2s;
+  }
+
+  .menu-items.show {
+    display: flex;
+    transition: 2s;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
 }

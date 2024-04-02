@@ -1,21 +1,48 @@
 import React from "react";
 import bannaImg from "../../../assets/banner/banna.jpg";
+import myPic from "../../../assets/banner/myPic.jpg";
+import myPic2 from "../../../assets/banner/myPic2.png";
+import heroBg from "../../../assets/banner/hero-bg.jpg";
+import heroHand from "../../../assets/banner/hero-hand.webp";
 import "./Banner.css";
-import { FaTwitter, FaFacebookF, FaDownload, FaGithub } from "react-icons/fa";
-import { GrLinkedin } from "react-icons/gr";
+import { FaDownload } from "react-icons/fa";
+import { Container } from "react-bootstrap";
+import Typewriter from "../../../components/Typewriter/Typewriter";
+import ReactTyped from "react-typed";
+import SocialList from "../../../components/SocialList/SocialList";
 
 const Banner = () => {
   return (
     <div className="banner-area" id="banner">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 banner-img">
+      <Container>
+        <div className="banner-content">
+          <div className="banner-img">
             <img src={bannaImg} alt="" />
+            {/* <img src={myPic2} alt="" /> */}
           </div>
-          <div className="col-lg-6 banner-text">
-            <p>Hy ! I am Al Hasanul Banna</p>
-            <h3>Full Stack Web Developer</h3>
-            <div class="slider-btn">
+          <div className="banner-text">
+            <p className="welcome-text">
+              Hay! <img className="hero-hand-shake" src={heroHand} alt="" />
+              I'm Hasanul Banna
+            </p>
+            <h3 className="animated-text">
+              I'm{" "}
+              <ReactTyped
+                strings={[
+                  "Frontend Developer",
+                  "Web Designer",
+                  "Web Programmer",
+                  "Full-stack Developer",
+                ]}
+                typeSpeed={100}
+                loop
+              />
+            </h3>
+            <p>
+              I can provide clean code and pixel perfect design. I also make
+              website more & more interactive with web animations.
+            </p>
+            {/* <div class="slider-btn">
               <button>
                 <a
                   className="btn-resume"
@@ -30,35 +57,14 @@ const Banner = () => {
                   contact
                 </a>
               </button>
-            </div>
+            </div> */}
             <div className="banner-social">
-              <span>Check out my: </span>
-              <ul className="social-icon">
-                <li>
-                  <a href="https://github.com/ahbanna">
-                    <FaGithub></FaGithub>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/ahbanna">
-                    <GrLinkedin></GrLinkedin>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.facebook.com/hasanul.tutul/">
-                    <FaFacebookF></FaFacebookF>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://twitter.com/a_h_banna">
-                    <FaTwitter></FaTwitter>
-                  </a>
-                </li>
-              </ul>
+              <span>Check out my</span>
+              <SocialList></SocialList>
             </div>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

@@ -1,0 +1,19 @@
+.section-title-container span {
+  padding: 7px 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  border: 2px solid #fe5000;
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #d5d5d5;
+}
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 20px 0;
+  color: #f6f6f6;
+}
