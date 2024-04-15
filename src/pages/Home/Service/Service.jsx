@@ -7,9 +7,13 @@ import {
   AiOutlineApi,
   AiOutlineLayout,
   AiOutlineTool,
+  AiFillSecurityScan,
 } from "react-icons/ai";
+import { MdOutlineManageHistory } from "react-icons/md";
 import { BsArrowRightCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import SectionTitle from "../../../components/SecionTitle/SecionTitle";
 
 const Service = () => {
   const [services, setServices] = useState([]);
@@ -36,6 +40,10 @@ const Service = () => {
         return <AiOutlineLayout size={32} />;
       case "AiOutlineTool":
         return <AiOutlineTool size={32} />;
+      case "AiFillSecurityScan":
+        return <AiFillSecurityScan size={32} />;
+      case "MdOutlineManageHistory":
+        return <MdOutlineManageHistory size={32} />;
       default:
         return null;
     }
@@ -43,12 +51,11 @@ const Service = () => {
 
   return (
     <div className="service-area" id="services">
-      <div className="container">
-        <div className="section-title">
-          <p>Featured Services</p>
-          <h2>My Services</h2>
-          {/* <div className="section-underline"></div> */}
-        </div>
+      <Container>
+        <SectionTitle
+          text="what i do for you"
+          title="my services"
+        ></SectionTitle>
         <div className="all-services">
           {services.map((service) => (
             <div className="single-service" key={service.id}>
@@ -72,7 +79,7 @@ const Service = () => {
             </div>
           ))}
         </div>
-      </div>
+      </Container>
     </div>
   );
 };
