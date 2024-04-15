@@ -42,7 +42,7 @@
   height: 390px;
   position: absolute;
   right: 10%;
-  /* bottom: 0; */
+  bottom: 5%;
   border-radius: 50%;
   /* background: var(--lighter-color); */
   background: #1f1f1f;
@@ -77,83 +77,46 @@
   margin-bottom: 0;
   font-weight: 700;
 }
-/* .about-area {
-  background-color: #042646;
-  padding: 100px 0;
-}
-.about-area p {
-  color: #666;
-  text-align: justify;
-}
-.react-tabs__tab-panel {
-  padding: 50px 0;
-}
-.about-area .react-tabs__tab--selected {
-  background: #fe5000;
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  padding: 8px 20px;
-}
-.about-area .react-tabs__tab-list {
-  border-bottom: 2px solid #fe5000;
-}
-.about-area .react-tabs {
-  background: #112130;
-  border-radius: 10px;
-  padding: 50px;
-}
-.about-me-info {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 25px 0;
-}
-.about-me-info span {
-  font-weight: 500;
-  color: #333;
-  margin-right: 5px;
-}
-.about-me-info p {
-  margin-bottom: 8px;
-}
-.contact-part {
+.about-btn {
   display: flex;
-  margin-bottom: 15px;
+  align-items: center;
+  background: #fff;
+  border-radius: 32px;
+  color: var(--black-color);
+  padding: 10px 25px 10px 15px;
+  position: absolute;
+  z-index: 2;
 }
-.contact-icon {
-  background: #fe5000;
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
+.about-btn h6 {
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 0;
+  margin: 0 15px;
 }
-.contact-icon svg {
-  color: #fff;
+.about-btn.one {
+  left: 20%;
+  top: 26%;
 }
-.contact-info span {
-  font-weight: 500;
-  color: #333;
+.about-btn.two {
+  left: 26%;
+  top: 50%;
 }
-.contact-info p {
-  margin-bottom: 0px;
+.about-btn.three {
+  left: 20%;
+  bottom: 15%;
 }
-.about-area button {
-  padding: 10px 20px;
-  background: #fe5000;
-  border: none;
+.about-dot-shape {
+  position: absolute;
+  z-index: 3;
 }
-.about-area button:hover {
-  background: #1a202c;
-  transition: 0.3s;
+.about-dot-shape.one {
+  left: 40%;
+  top: 0%;
 }
-li.react-tabs__tab {
-  color: #fff;
-  font-weight: 500;
-} */
-
+.about-dot-shape.two {
+  bottom: 0;
+  right: 10%;
+}
 @media only screen and (max-width: 576px) {
   .about-me-info {
     grid-template-columns: repeat(1, 1fr);
