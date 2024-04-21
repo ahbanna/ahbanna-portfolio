@@ -14,16 +14,17 @@ import git from "../../../assets/skills/git.png";
 import github from "../../../assets/skills/github.png";
 import jquery from "../../../assets/skills/jquery.png";
 import sass from "../../../assets/skills/sass.png";
+import { Container } from "react-bootstrap";
+import SectionTitle from "../../../components/SecionTitle/SecionTitle";
 const Skill = () => {
   return (
     <div className="skill-area" id="skill">
-      <div className="container">
-        <div className="section-title">
-          <p>Skill</p>
-          <h2>My Skills</h2>
-          {/* <div className="section-underline"></div> */}
-        </div>
-        <div className="skill-img">
+      <Container>
+        <SectionTitle
+          text="my skills"
+          title="Let’s Explore Popular Skills & Experience"
+        ></SectionTitle>
+        <div className="all-skill-imges">
           <div className="skill-item">
             <div className="skill-icon">
               <img src={figma} alt="" />
@@ -54,12 +55,12 @@ const Skill = () => {
             </div>
             <span>JS</span>
           </div>
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={jquery} alt="" />
             </div>
             <span>Jquery</span>
-          </div>
+          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={react} alt="" />
@@ -79,12 +80,12 @@ const Skill = () => {
             <span>MongoDB</span>
           </div>
 
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={firebase} alt="" />
             </div>
             <span>Firebase</span>
-          </div>
+          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={git} alt="" />
@@ -110,7 +111,7 @@ const Skill = () => {
             <span>Shopify</span>
           </div>
         </div>
-      </div>
+      </Container>
     </div>
   );
 };

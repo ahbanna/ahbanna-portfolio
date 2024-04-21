@@ -10,7 +10,7 @@ import { Container } from "react-bootstrap";
 import Typewriter from "../../../components/Typewriter/Typewriter";
 import ReactTyped from "react-typed";
 import SocialList from "../../../components/SocialList/SocialList";
-
+import { MdArrowRightAlt } from "react-icons/md";
 const Banner = () => {
   return (
     <div className="banner-area" id="banner">
@@ -22,9 +22,12 @@ const Banner = () => {
           </div>
           <div className="banner-text">
             <p className="welcome-text">
-              Hay! <img className="hero-hand-shake" src={heroHand} alt="" />
-              I'm Hasanul Banna
+              <img className="hero-hand-shake" src={heroHand} alt="" />
+              Hello There!
             </p>
+            <h2 className="dev-name">
+              I'm Hasanul <span>Banna</span>
+            </h2>
             <h3 className="animated-text">
               I'm{" "}
               <ReactTyped
@@ -58,6 +61,9 @@ const Banner = () => {
                 </a>
               </button>
             </div> */}
+            <a href="" className="cta-text">
+              need this? lets talk <MdArrowRightAlt />
+            </a>
             <div className="banner-social">
               <span>Check out my</span>
               <SocialList></SocialList>

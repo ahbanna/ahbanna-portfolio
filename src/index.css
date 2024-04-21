@@ -2,12 +2,19 @@
 note it */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
+  --bg-one: #0f183e;
+  --bg-two: #002d3e;
+  --white: #ffffff;
   --black: #070707;
   --black-2: #252629;
   --black-3: #222326;
+  --black-4: #1c1d20;
   --white: #fff;
   --white-2: #f6f6f6;
   --gray: #999;
+  --blue: #0788ff;
+  --orange: #ff5746;
+  --orage-two: #ff3d4f;
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
 }
@@ -15,7 +22,7 @@ note it */
 body {
   margin: 0;
   padding: 0;
-  background-color: #7b8491;
+  background-color: var(--bg-color);
   font-family: var(--font-inter);
 }
 h1 {
@@ -70,12 +77,12 @@ a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
+  text-decoration: none !important;
   outline: none;
   color: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: inherit;
 }
 img {
   max-width: 100%;

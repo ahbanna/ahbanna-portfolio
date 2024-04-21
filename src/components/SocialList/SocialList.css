@@ -28,10 +28,10 @@
 
 .social-list li a {
   display: inline-block;
-  width: 46px;
-  height: 46px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
-  border: 2px solid #eaeaef;
+  border: 1px solid #eaeaef;
   text-align: center;
   line-height: 36px;
   color: #818181;
