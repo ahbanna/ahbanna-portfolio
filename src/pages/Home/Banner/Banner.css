@@ -1,21 +1,6 @@
 .banner-area {
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; */
-  /* background: linear-gradient(
-    90deg,
-    #07233b 1.67%,
-    #041d34 39.95%,
-    #04192d 58.24%,
-    #040e18 80.28%,
-    #050c16 101.48%
-  ); */
-  /* background-image: url(../../../assets//banner/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; */
   background-color: var(--bg-one);
+  /* background-color: var(--bg-three); */
 }
 .banner-content {
   display: grid;
@@ -25,13 +10,13 @@
   align-items: center;
   height: 100vh;
 }
-.banner-img {
-  /* position: relative; */
-}
 .banner-img img {
   /* height: 630px; */
   border-radius: 50%;
   /* border: 10px solid #0788ff; */
+  position: relative;
+}
+.banner-text {
   position: relative;
 }
 .banner-img::before {
@@ -72,22 +57,6 @@
   }
 }
 
-/* .banner-img {
-  position: relative;
-}
-.banner-img img::after {
-  content: "";
-  width: 612px;
-  height: 328px;
-  position: absolute;
-  top: 120px;
-  right: -48px;
-  background: #fd562a;
-  transform: rotate(-35deg);
-  z-index: -1;
-  animation: anim-rotate 8s infinite;
-  border-radius: 10px;
-} */
 .slider-btn {
   margin: 40px 0;
 }
@@ -203,7 +172,7 @@ button a {
 .banner-social span {
   color: #fff;
   text-transform: uppercase;
-  background: #0788ff;
+  background: var(--orange);
   padding: 10px 25px;
   font-weight: 600;
   margin-right: 15px;
@@ -213,11 +182,25 @@ button a {
   display: flex;
   margin-top: 30px;
 }
-/* @keyframes anim-rotate {
-  100% {
-    transform: rotate(-35deg) scale(1.1);
+.shape-img {
+  animation: animationShape 5s cubic-bezier(1, 0.99, 0.03, 0.01) infinite;
+  text-align: center;
+  margin-right: -50%;
+}
+@keyframes animationShape {
+  0% {
+    transform: rotate(0deg);
   }
-} */
+  100% {
+    transform: rotate(1turn);
+  }
+}
+.banner-area .shape-four {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* RESPONSIVE */
 @media only screen and (max-width: 576px) {
   .banner-area {
     text-align: center;

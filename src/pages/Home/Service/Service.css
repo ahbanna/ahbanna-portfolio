@@ -1,6 +1,6 @@
 .service-area {
   padding: 80px 0;
-  background-color: var(--black-3);
+  background-color: var(--bg-one);
 }
 .all-services {
   display: grid;
@@ -8,51 +8,109 @@
   grid-gap: 10px;
 }
 .single-service {
-  background-color: var(--black-2);
+  /* background-color: var(--black-2); */
   padding: 30px 20px;
   text-align: center;
   transition: 0.5s;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-}
-.single-service:hover {
-  background: linear-gradient(
-    45deg,
-    rgba(254, 80, 0, 1) 15%,
-    rgba(224, 4, 11, 1) 75%
-  );
-  transition: 0.5s;
-  transform: translateY(-7.5px);
+  text-align: left;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
 }
 .single-service h3 {
   margin: 20px 0;
   color: var(--white-2);
   transition: 0.3s;
 }
+.single-service:hover h3 {
+  color: var(--orange);
+}
 
 .single-service svg {
   height: 45px;
   width: 45px;
   color: #fe5000;
+  transition: 0.5s;
 }
 .single-service:hover svg {
-  color: #fff;
+  color: var(--white);
+  transition: 0.5s;
 }
 .single-service p {
   color: var(--gray);
 }
-
-span.right-arrow svg {
-  height: 22px;
-  width: 22px;
-  color: #6f6f6f;
+.single-service::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b1315;
+  background-color: var(--orange);
+  transition: 0.7s;
+  z-index: -1;
+  transform: scaleY(0);
+  opacity: 0.1;
+}
+.single-service::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #0b1315;
+  background-color: var(--orange);
+  transition: 0.7s;
+  z-index: -1;
+  transform: scaleX(0);
+  opacity: 0.1;
+}
+.single-service:hover::before {
+  transform: scaleY(1);
+}
+.single-service:hover::after {
+  transform: scaleX(1);
+}
+.single-service a {
+  display: inline-block;
+}
+.read-more-btn {
+  display: flex;
+}
+.read-more-text {
+  color: var(--orange) !important;
 }
 
-.service-area .section-title p {
-  color: #000;
+.read-more-text {
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: 600;
+}
+.read-more-text:hover {
+  color: var(--white) !important;
+  transition: 0.5s;
+}
+.single-service .read-more-btn svg {
+  height: 20px;
+  width: 20px;
+  transform: translateY(5px);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  right: 0;
+}
+.read-more-btn:hover svg {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
 }
 
+/* RESPONSIVE */
 @media only screen and (max-width: 576px) {
   .service-area {
     padding: 10px 0;

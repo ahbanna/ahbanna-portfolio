@@ -1,0 +1,13 @@
+.border-circle span {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  border: 120px solid hsla(0, 0%, 100%, 0.04);
+  display: inline-block;
+  /* position: absolute;
+  bottom: -260px;
+  left: -130px; */
+  z-index: -1;
+  animation-delay: 1s;
+  animation-duration: 1s;
+}

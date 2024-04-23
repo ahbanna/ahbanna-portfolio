@@ -10,10 +10,10 @@ import {
   AiFillSecurityScan,
 } from "react-icons/ai";
 import { MdOutlineManageHistory } from "react-icons/md";
-import { BsArrowRightCircle } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Service = () => {
   const [services, setServices] = useState([]);
@@ -72,9 +72,10 @@ const Service = () => {
                   image: service.image,
                 }}
               >
-                <span className="right-arrow">
-                  <BsArrowRightCircle></BsArrowRightCircle>
-                </span>
+                <div className="read-more-btn">
+                  <p className="read-more-text">Read More </p>
+                  <MdKeyboardArrowRight />
+                </div>
               </Link>
             </div>
           ))}

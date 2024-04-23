@@ -5,6 +5,10 @@ import "./About.css";
 import { FaDownload } from "react-icons/fa";
 import aboutBtnImg1 from "../../assets/about/btn-image1.png";
 import abotDotShape from "../../assets/about/about-dot-shape.png";
+import shapeThree from "../../../src/assets/shape-3.png";
+import shapeFour from "../../../src/assets/shape-4.png";
+import shapeFive from "../../../src/assets/shape-5.png";
+import BorderCircle from "../../components/BorderCircle/BorderCircle";
 
 const About = () => {
   return (
@@ -92,6 +96,16 @@ const About = () => {
             </div>
             <div className="about-dot-shape two">
               <img src={abotDotShape} alt="" srcset="" />
+            </div>
+            <div className="shape-three">
+              <img src={shapeThree} alt="" srcset="" />
+            </div>
+            <BorderCircle></BorderCircle>
+            <div className="shape-four">
+              <img src={shapeFour} alt="" srcset="" />
+            </div>
+            <div className="shape-five">
+              <img src={shapeFive} alt="" srcset="" />
             </div>
           </div>
         </div>
