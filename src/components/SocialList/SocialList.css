@@ -1,41 +1,63 @@
 .social-list {
-  display: flex;
-}
-.social-list li:hover a {
-  transition: 0.3s;
-  margin-top: -2px;
+  margin-top: 5px;
 }
 
-.social-list svg {
-  color: #f6f6f6;
-}
-.social-list span {
-  margin-top: 6px;
-  color: #f6f6f6;
-  margin-right: 10px;
-}
-
-.social-list ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-}
-
-.social-list li {
+.social-list ul li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 9px;
 }
 
-.social-list li a {
-  display: inline-block;
-  width: 40px;
-  height: 40px;
+.social-list ul li a {
+  /* font-size: 10px; */
+  color: var(--white);
+  height: 30px;
+  width: 30px;
+  /* background: transparent; */
   border-radius: 50%;
-  border: 1px solid #eaeaef;
-  text-align: center;
-  line-height: 36px;
-  color: #818181;
-  transition: 0.3s;
+  display: inline-block;
+  line-height: 30px;
+  /* border: 1px solid #e6e8eb; */
+  overflow: hidden;
+  transition: width 0.4s ease 0s, background 0.4s ease 0s;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.social-list ul li:hover a {
+  width: 100px;
+  text-align: left;
+  border-radius: 50px;
+}
+
+.social-list ul li svg {
+  left: 8px;
+  top: 8px;
+  float: left;
+  position: absolute;
+  transition: all 0.8s ease 0s;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.social-list ul li:hover svg {
+  transform: rotate(360deg);
+  line-height: 12px;
+}
+
+.social-list span {
+  font-size: 13px;
+  color: var(--white);
+  text-transform: capitalize;
+  position: absolute;
+  top: -1px;
+  left: 30px;
+  text-align: left;
+  transition: left 0.5s ease 0s, opacity 0.5s ease 0s;
+  opacity: 0;
+  font-weight: 700;
+}
+.social-list:hover span {
+  opacity: 1;
 }
 .facebook {
   background: #1877f2;
@@ -45,4 +67,7 @@
 }
 .twitter {
   background: #1da1f2;
+}
+.github {
+  background: #b9b9b9;
 }

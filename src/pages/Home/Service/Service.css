@@ -12,13 +12,40 @@
   padding: 30px 20px;
   text-align: center;
   transition: 0.5s;
-  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
-  text-align: left;
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2); */
+  /* text-align: left; */
   position: relative;
   z-index: 1;
   background-color: transparent;
+
+  /* background: #fff; */
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  border: 3px solid rgba(0, 0, 0, 0.07);
+  /* margin-bottom: 30px; */
+}
+.single-service:hover {
+  /* background: var(--orange); */
+  /* border: 3px solid var(--orange); */
+  transition: all 0.5s ease-out;
+  transform: scale(1.03) rotate(0deg);
+  box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2);
+}
+.service-number {
+  font-size: 40px;
+  line-height: 80px;
+  color: #f0f0f0;
+  opacity: 0.4;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  opacity: 0.1;
+}
+.single-service:hover .service-number {
+  color: var(--black);
+  opacity: 0.5;
 }
 .single-service h3 {
   margin: 20px 0;
@@ -26,9 +53,11 @@
   transition: 0.3s;
 }
 .single-service:hover h3 {
-  color: var(--orange);
+  color: var(--white);
 }
-
+.single-service:hover p {
+  color: var(--white);
+}
 .single-service svg {
   height: 45px;
   width: 45px;
@@ -54,7 +83,7 @@
   transition: 0.7s;
   z-index: -1;
   transform: scaleY(0);
-  opacity: 0.1;
+  opacity: 0.6;
 }
 .single-service::after {
   content: "";
@@ -68,7 +97,7 @@
   transition: 0.7s;
   z-index: -1;
   transform: scaleX(0);
-  opacity: 0.1;
+  opacity: 0.6;
 }
 .single-service:hover::before {
   transform: scaleY(1);
@@ -81,24 +110,34 @@
 }
 .read-more-btn {
   display: flex;
+  background: var(--orange);
+  border-radius: 5px;
 }
-.read-more-text {
-  color: var(--orange) !important;
+.single-service:hover .read-more-btn {
+  background: var(--white);
 }
 
 .read-more-text {
   transition: 0.5s;
   font-size: 14px;
-  font-weight: 600;
-}
-.read-more-text:hover {
+  /* font-weight: 600; */
+  margin: 0;
   color: var(--white) !important;
+  padding: 3px 0 3px 15px;
+  text-transform: capitalize;
+}
+.single-service:hover .read-more-text {
+  transition: 0.5s;
+  color: var(--black) !important;
+}
+.read-more-btn:hover p {
+  color: var(--orange) !important;
   transition: 0.5s;
 }
 .single-service .read-more-btn svg {
   height: 20px;
   width: 20px;
-  transform: translateY(5px);
+  transform: translateY(6px);
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
@@ -108,6 +147,7 @@
   visibility: visible;
   opacity: 1;
   transition: 0.5s;
+  color: var(--black) !important;
 }
 
 /* RESPONSIVE */

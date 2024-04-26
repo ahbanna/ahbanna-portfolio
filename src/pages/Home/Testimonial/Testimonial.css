@@ -1,0 +1,115 @@
+.testimonial-area {
+  padding: 120px 0;
+  background-color: var(--bg-five);
+}
+.testimonial-area .container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 20px;
+  align-items: center;
+}
+.single-testimonial {
+  transition: 0.5s;
+  text-align: center;
+  padding: 50px 60px;
+  border-radius: 15px;
+  background: var(--bg-one);
+  border: 1px solid #ffffff1a;
+}
+.single-testimonial img {
+  border-radius: 50px;
+}
+.client-img svg {
+  font-size: 40px;
+  color: var(--orange);
+  position: absolute;
+}
+.single-testimonial p {
+  margin-top: 8px;
+}
+.customer-name {
+  font-weight: 600;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.testimonial-area .swiper {
+  padding: 80px 0 50px 0;
+}
+.testimonial-area .swiper-button-prev,
+.testimonial-area .swiper-button-next {
+  height: 40px;
+  width: 40px;
+  background: var(--white);
+  border-radius: 50%;
+  color: #fff;
+}
+.testimonial-area .swiper-button-prev {
+  left: unset !important;
+  right: 5% !important;
+  top: 7% !important;
+}
+.testimonial-area .swiper-button-next {
+  right: 0 !important;
+  top: 7%;
+}
+/* .swiper-button-prev::after {
+  transform: rotate(90deg) !important;
+}
+.swiper-button-next::after {
+  transform: rotate(90deg) !important;
+} */
+.testimonial-area .swiper-button-prev::after,
+.testimonial-area .swiper-button-next::after {
+  font-size: 16px !important;
+  color: var(--black);
+}
+.testimonial-area .swiper-button-next:hover,
+.testimonial-area .swiper-button-prev:hover {
+  background: var(--orange);
+  transition: 0.3s;
+  color: var(--white);
+}
+.testimonial-area .swiper-button-next:hover::after,
+.testimonial-area .swiper-button-prev:hover::after {
+  color: var(--white);
+}
+
+/*  */
+/* ----------------- RESPONSIVE starts ----------- */
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonial-area {
+    padding: 50px 0 20px 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    right: 6% !important;
+  }
+}
+/*SM Device*/
+@media (min-width: 576px) and (max-width: 767px) {
+  .testimonial-area {
+    padding: 50px 0 0 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    right: 8% !important;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .testimonial-area {
+    padding: 50px 0;
+  }
+  .testimonial-area .swiper {
+    padding: 40px 0 0 0;
+  }
+  .testimonial-area .swiper-button-prev {
+    display: none;
+  }
+  .testimonial-area .swiper-button-next {
+    display: none;
+  }
+}

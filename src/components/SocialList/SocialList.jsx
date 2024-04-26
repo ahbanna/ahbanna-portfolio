@@ -8,6 +8,31 @@ const SocialList = () => {
       <ul>
         <li>
           <a className="linkedin" href="https://www.linkedin.com/in/ahbanna/">
+            <FaLinkedinIn></FaLinkedinIn> <span>LinkedIn</span>
+          </a>
+        </li>
+        <li>
+          <a className="github" href="https://github.com/ahbanna">
+            <FaGithub></FaGithub> <span>Github</span>
+          </a>
+        </li>
+        <li>
+          <a
+            className="facebook"
+            href="https://www.facebook.com/hasanul.tutul/"
+          >
+            <FaFacebookF></FaFacebookF> <span>Facebook</span>
+          </a>
+        </li>
+        <li>
+          <a className="twitter" href="https://twitter.com/a_h_banna">
+            <FaTwitter></FaTwitter> <span>Twitter</span>
+          </a>
+        </li>
+      </ul>
+      {/* <ul>
+        <li>
+          <a className="linkedin" href="https://www.linkedin.com/in/ahbanna/">
             <FaLinkedinIn></FaLinkedinIn>
           </a>
         </li>
@@ -29,7 +54,7 @@ const SocialList = () => {
             <FaTwitter></FaTwitter>
           </a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 };

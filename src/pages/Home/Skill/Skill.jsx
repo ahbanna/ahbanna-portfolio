@@ -16,6 +16,7 @@ import jquery from "../../../assets/skills/jquery.png";
 import sass from "../../../assets/skills/sass.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
+import SocialListTwo from "../../../components/SocialListTwo/SocialListTwo";
 const Skill = () => {
   return (
     <div className="skill-area" id="skill">

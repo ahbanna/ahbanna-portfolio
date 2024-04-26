@@ -9,6 +9,8 @@ import shapeThree from "../../../src/assets/shape-3.png";
 import shapeFour from "../../../src/assets/shape-4.png";
 import shapeFive from "../../../src/assets/shape-5.png";
 import BorderCircle from "../../components/BorderCircle/BorderCircle";
+import PrimaryButton from "../../components/PrimaryButton/PrimaryButton";
+import SocialList from "../../components/SocialList/SocialList";
 
 const About = () => {
   return (
@@ -20,9 +22,6 @@ const About = () => {
         ></SectionTitle>
         <div className="about-area-content">
           <div className="about-left">
-            {/* <h5>
-              <span>Code, Coffee, and Creativity</span>: A Developer's Narrative
-            </h5> */}
             <p>
               Hi, my name is <strong className="color-white">Banna</strong> and
               a passionate Frontend Developer. I’ve spent most of my waking
@@ -58,16 +57,24 @@ const About = () => {
                 Language <span>:</span> <strong>English</strong>
               </li>
             </ul>
-            <div className="resume-btn">
-              <button>
-                <a
-                  className="btn-resume"
-                  href="/public/Resume of Md. Al Hasanul Banna.pdf"
-                  download
+            <div className="social-resume">
+              <div className="about-social-link">
+                <h6>Check out my</h6>
+                <SocialList></SocialList>
+              </div>
+              <div className="resume-btn">
+                <PrimaryButton
+                  text={
+                    <>
+                      Get Resume
+                      <FaDownload />
+                    </>
+                  }
+                  link="/public/Resume of Md. Al Hasanul Banna.pdf"
                 >
-                  Get Resume <FaDownload></FaDownload>
-                </a>
-              </button>
+                  <FaDownload></FaDownload>
+                </PrimaryButton>
+              </div>
             </div>
           </div>
           <div className="about-right">

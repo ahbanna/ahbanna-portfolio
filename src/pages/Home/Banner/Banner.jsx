@@ -13,6 +13,7 @@ import { MdArrowRightAlt } from "react-icons/md";
 import shapeOne from "../../../assets/shape-1.png";
 import shapeFour from "../../../assets/shape-4.png";
 import SocialListTwo from "../../../components/SocialListTwo/SocialListTwo";
+import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 
 const Banner = () => {
   return (
@@ -67,11 +68,16 @@ const Banner = () => {
             <a href="" className="cta-text">
               need this? lets talk <MdArrowRightAlt />
             </a>
-            <div className="banner-social">
-              {/* TODO: make improvement in social btn*/}
+            <div className="view-works-btn">
+              <PrimaryButton
+                text="view my works"
+                link="https://www.youtube.com/"
+              ></PrimaryButton>
+            </div>
+            {/* <div className="banner-social">
               <span>Check out my</span>
               <SocialList></SocialList>
-            </div>
+            </div> */}
             <div className="shape-img">
               <img src={shapeOne} alt="" srcset="" />
             </div>

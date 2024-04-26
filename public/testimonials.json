@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Olivia Davis",
+    "feedback": "Great service! The web developer team did an excellent job with my project. Highly recommended.",
+    "image": "https://i.ibb.co/KqL4nJj/client-6.png"
+  },
+  {
+    "id": 2,
+    "name": "Ethan Brown",
+    "feedback": "I'm impressed with the professionalism and expertise of Hasanul Banna. He delivered exactly what I needed.",
+    "image": "https://i.ibb.co/0jnV5xq/client-2.png"
+  },
+  {
+    "id": 3,
+    "name": "Alice Johnson",
+    "feedback": "Hasanul Banna is a talented developer. He understood my requirements perfectly and implemented them efficiently.",
+    "image": "https://i.ibb.co/87wFmgp/client-5.png"
+  },
+  {
+    "id": 4,
+    "name": "Michael Brown",
+    "feedback": "Outstanding work by Hasanul Banna! He went above and beyond to ensure the success of my project.",
+    "image": "https://i.ibb.co/QFqcPDR/client-7.png"
+  },
+  {
+    "id": 5,
+    "name": "Emily Wilson",
+    "feedback": "I'm delighted with the results provided by Hasanul Banna. His attention to detail and communication skills are commendable.",
+    "image": " https://i.ibb.co/VqTJ5Pj/client-4.png"
+  },
+  {
+    "id": 6,
+    "name": "Sophia Miller",
+    "feedback": "Hasanul Banna exceeded my expectations. His expertise in web development is evident in the quality of his work.",
+    "image": "https://i.ibb.co/sHtwjbT/client-8.png"
+  }
+]

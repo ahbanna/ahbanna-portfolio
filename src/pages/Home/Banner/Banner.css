@@ -169,7 +169,7 @@ button a {
 .cta-text:hover::after {
   width: 100%;
 }
-.banner-social span {
+/* .banner-social span {
   color: #fff;
   text-transform: uppercase;
   background: var(--orange);
@@ -180,6 +180,9 @@ button a {
 }
 .banner-social {
   display: flex;
+  margin-top: 30px;
+} */
+.view-works-btn {
   margin-top: 30px;
 }
 .shape-img {
