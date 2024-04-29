@@ -1,35 +1,93 @@
 .contact-area {
-  background: #f6f9fc;
-  padding: 150px 0;
+  background: var(--bg-one);
+  padding: 120px 0;
+}
+.contact-area .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.name-email {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-column-gap: 12px;
+  overflow: hidden;
 }
 .contact-form input {
   border-radius: 0;
   border: 1px solid #555;
+  transition: all 0.5s;
+  background-color: transparent;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--white-2);
+  opacity: 0.5;
 }
 .contact-form .form-control:focus {
-  border-color: #fe5000;
+  border-color: var(--orange);
   outline: 0;
   box-shadow: none;
-  font-weight: 600;
-}
-.contact-form button {
-  padding: 10px 39px;
-  background: #fe5000;
-  border: none;
-  border-radius: 0;
-  transition: 0.3s;
-}
-.contact-form button:hover {
-  background: #000;
-  transition: 0.3s;
+  background: transparent;
+  color: var(--white-2);
 }
 .contact-form textarea {
   border-radius: 0;
   border: 1px solid #555;
+  background-color: transparent;
 }
-.contact-area .section-title p {
-  color: #000;
+
+.submit-btn {
+  overflow: hidden;
+  display: inline-block;
+  /* line-height: 1.4; */
+  /* border-radius: 35px; */
+  text-align: center;
+  cursor: pointer;
+  transition: 250ms all ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  outline: none !important;
+  border: 1px solid var(--orange);
+  letter-spacing: 2px;
 }
+.submit-btn::before {
+  z-index: -3;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: 0.3s ease-out all;
+  background-color: var(--orange);
+}
+.submit-btn:hover::before {
+  transform: translateX(0);
+}
+.btn-submit svg {
+  /* position: absolute;
+  right: -1px;
+  top: -1px;
+  bottom: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 20px;
+  /* color: #ffffff;
+  border-radius: 50%;
+  background: #ffb400; */
+}
+/* RESPONSIVE */
 @media only screen and (max-width: 576px) {
   .contact-area {
     padding: 25px 0;

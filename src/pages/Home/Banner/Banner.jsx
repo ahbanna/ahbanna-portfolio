@@ -12,7 +12,6 @@ import SocialList from "../../../components/SocialList/SocialList";
 import { MdArrowRightAlt } from "react-icons/md";
 import shapeOne from "../../../assets/shape-1.png";
 import shapeFour from "../../../assets/shape-4.png";
-import SocialListTwo from "../../../components/SocialListTwo/SocialListTwo";
 import PrimaryButton from "../../../components/PrimaryButton/PrimaryButton";
 
 const Banner = () => {
