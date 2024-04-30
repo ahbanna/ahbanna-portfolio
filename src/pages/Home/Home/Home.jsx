@@ -6,6 +6,8 @@ import RecentProjects from "../RecentProjects/RecentProjects";
 import About from "../../About/About";
 import Contact from "../Contact/Contact";
 import Testimonial from "../Testimonial/Testimonial";
+import Hiring from "../Hiring/Hiring";
+import CustomCursor from "../../../components/CustomCursor/CustomCursor";
 
 const Home = () => {
   return (
@@ -16,7 +18,9 @@ const Home = () => {
       <Skill></Skill>
       <RecentProjects></RecentProjects>
       <Testimonial></Testimonial>
+      <Hiring></Hiring>
       <Contact></Contact>
+      <CustomCursor></CustomCursor>
     </>
   );
 };

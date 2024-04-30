@@ -1,0 +1,9 @@
+.hiring-area {
+  padding: 50px 0;
+  background-color: var(--bg-one);
+}
+.hiring-area .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

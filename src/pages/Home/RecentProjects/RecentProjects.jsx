@@ -21,7 +21,7 @@ const RecentProjects = () => {
     <div className="recent-projects-area" id="recent-projects">
       <div className="container">
         <div className="section-title">
-          <p>Passion Projects</p>
+          <p>Some of My Creative Projects</p>
           <h2>My Recent Projects</h2>
         </div>
         <div className="all-recent-projects">
