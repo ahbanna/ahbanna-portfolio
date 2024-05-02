@@ -1,252 +1,271 @@
-import React, { useState } from "react";
-import "./RecentProjects.css";
-import { Button, Modal } from "react-bootstrap";
-import social_chef from "../../../assets/projects/social_chef.png";
-import social_chef_banner from "../../../assets/projects/social_chef_banner.png";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
-import social_chef1 from "../../../assets/projects/social_chef1.png";
-import social_chef2 from "../../../assets/projects/social_chef2.png";
-import social_chef3 from "../../../assets/projects/social_chef3.png";
-import edu_kids_banner from "../../../assets/projects/edukids/edu-kids-banner.png";
-import sports_camp_banner from "../../../assets/projects/sports-camp/sports-camp-banner.png";
-import job_hunter_banner from "../../../assets/projects/job-hunter/job-hunter-banner.png";
-import { FaLine } from "react-icons/fa";
-const RecentProjects = () => {
-  const [showModal, setShowModal] = useState(false);
+// import React, { useState, useEffect } from "react";
+// import "./RecentProjects.css";
+// import SectionTitle from "../../../components/SecionTitle/SecionTitle";
+// import { Container } from "react-bootstrap";
+// import { Link } from "react-router-dom";
+// import { ImLink } from "react-icons/im";
 
-  const handleClose = () => setShowModal(false);
-  const handleShow = () => setShowModal(true);
+// const RecentProjects = () => {
+//   const [items, setItems] = useState([]);
+//   const [originalItems, setOriginalItems] = useState([]);
+//   const [activeCategory, setActiveCategory] = useState(null);
+
+//   useEffect(() => {
+//     fetch("projects.json")
+//       .then((response) => response.json())
+//       .then((data) => {
+//         setItems(data);
+//         setOriginalItems(data);
+//       })
+//       .catch((error) => console.error("Error fetching data:", error));
+//   }, []);
+
+//   const filterItem = (categItem, event) => {
+//     event.preventDefault();
+//     const updateItems = originalItems.filter((curElem) => {
+//       return curElem.category === categItem;
+//     });
+
+//     setItems(updateItems);
+//     setActiveCategory(categItem);
+//   };
+
+//   const resetFilter = (event) => {
+//     event.preventDefault();
+//     setItems(originalItems);
+//     setActiveCategory(null);
+//   };
+
+//   return (
+//     <div className="recent-project-area">
+//       <Container>
+//         <SectionTitle
+//           title="Some of My Creative Projects"
+//           text="My Recent Projects"
+//         ></SectionTitle>
+//       </Container>
+//       <Container>
+//         <ul className="nav justify-content-center">
+//           <li className="nav-item">
+//             <a
+//               className={!activeCategory ? "nav-link active" : "nav-link"}
+//               href="#"
+//               onClick={(event) => resetFilter(event)}
+//             >
+//               All
+//             </a>
+//           </li>
+//           <li className="nav-item">
+//             <a
+//               className={
+//                 activeCategory === "react" ? "nav-link active" : "nav-link"
+//               }
+//               href="#"
+//               onClick={(event) => filterItem("react", event)}
+//             >
+//               React JS
+//             </a>
+//           </li>
+//           <li className="nav-item">
+//             <a
+//               className={
+//                 activeCategory === "html" ? "nav-link active" : "nav-link"
+//               }
+//               href="#"
+//               onClick={(event) => filterItem("html", event)}
+//             >
+//               HTML & CSS
+//             </a>
+//           </li>
+//           <li className="nav-item">
+//             <a
+//               className={
+//                 activeCategory === "wordpress" ? "nav-link active" : "nav-link"
+//               }
+//               href="#"
+//               onClick={(event) => filterItem("wordpress", event)}
+//             >
+//               Wordpress
+//             </a>
+//           </li>
+//           <li className="nav-item">
+//             <a
+//               className={
+//                 activeCategory === "shopify" ? "nav-link active" : "nav-link"
+//               }
+//               href="#"
+//               onClick={(event) => filterItem("shopify", event)}
+//             >
+//               Shopify
+//             </a>
+//           </li>
+//         </ul>
+//       </Container>
+//       <div className="all-items">
+//         {items.map((elem) => {
+//           const { id, name, image, description, liveLink } = elem;
+//           return (
+//             <div key={id}>
+//               <div className="single-items">
+//                 <div className="single-portfolio">
+//                   <div className="portfolio-bg">
+//                     <img src={image} alt="" srcSet="" />
+//                   </div>
+//                   <div className="portfolio-view-details">
+//                     <Link to={liveLink} target="_blank">
+//                       {/* <GoLink /> */}
+//                       <ImLink />
+//                     </Link>
+//                   </div>
+//                 </div>
+//               </div>
+//             </div>
+//           );
+//         })}
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default RecentProjects;
+
+import React, { useState, useEffect } from "react";
+import "./RecentProjects.css";
+import SectionTitle from "../../../components/SecionTitle/SecionTitle";
+import { Container, Button } from "react-bootstrap"; // Import Button from react-bootstrap
+import { Link } from "react-router-dom";
+import { ImLink } from "react-icons/im";
+
+const RecentProjects = () => {
+  const [items, setItems] = useState([]);
+  const [originalItems, setOriginalItems] = useState([]);
+  const [activeCategory, setActiveCategory] = useState(null);
+  const [displayedItems, setDisplayedItems] = useState(6); // State for number of displayed items
+
+  useEffect(() => {
+    fetch("projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setItems(data);
+        setOriginalItems(data);
+      })
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
+  const filterItem = (categItem, event) => {
+    event.preventDefault();
+    const updateItems = originalItems.filter((curElem) => {
+      return curElem.category === categItem;
+    });
+
+    setItems(updateItems);
+    setActiveCategory(categItem);
+  };
+
+  const resetFilter = (event) => {
+    event.preventDefault();
+    setItems(originalItems);
+    setActiveCategory(null);
+  };
+
+  const handleLoadMore = () => {
+    setDisplayedItems(items.length); // Display all items
+  };
+
   return (
-    <div className="recent-projects-area" id="recent-projects">
-      <div className="container">
-        <div className="section-title">
-          <p>Some of My Creative Projects</p>
-          <h2>My Recent Projects</h2>
-        </div>
-        <div className="all-recent-projects">
-          <div className="single-recent-project">
-            <div className="image-container">
-              <img src={sports_camp_banner} alt="" />
-              <p className="open-modal-text" onClick={handleShow}>
-                Visit The Website
-              </p>
-            </div>
-            <Modal show={showModal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Social Chef</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div className="link-area">
-                  <button>
-                    <a
-                      href="https://chef-hunter-d7d7c.web.app/"
-                      target="_blank"
-                    >
-                      Live site <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-client"
-                      target="_blank"
-                    >
-                      Client site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-server"
-                      target="_blank"
-                    >
-                      Server site code <FaLine></FaLine>
-                    </a>
-                  </button>
+    <div className="recent-project-area">
+      <Container>
+        <SectionTitle
+          title="Some of My Creative Projects"
+          text="My Recent Projects"
+        ></SectionTitle>
+      </Container>
+      <Container>
+        <ul className="nav justify-content-center">
+          <li className="nav-item">
+            <a
+              className={!activeCategory ? "nav-link active" : "nav-link"}
+              href="#"
+              onClick={(event) => resetFilter(event)}
+            >
+              All
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className={
+                activeCategory === "react" ? "nav-link active" : "nav-link"
+              }
+              href="#"
+              onClick={(event) => filterItem("react", event)}
+            >
+              React JS{" "}
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className={
+                activeCategory === "html" ? "nav-link active" : "nav-link"
+              }
+              href="#"
+              onClick={(event) => filterItem("html", event)}
+            >
+              HTML & CSS
+            </a>
+          </li>
+          <li className="nav-item">
+            {" "}
+            <a
+              className={
+                activeCategory === "wordpress" ? "nav-link active" : "nav-link"
+              }
+              href="#"
+              onClick={(event) => filterItem("wordpress", event)}
+            >
+              Wordpress
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              className={
+                activeCategory === "shopify" ? "nav-link active" : "nav-link"
+              }
+              href="#"
+              onClick={(event) => filterItem("shopify", event)}
+            >
+              Shopify
+            </a>
+          </li>
+        </ul>
+      </Container>
+      <div className="all-items">
+        {items.slice(0, displayedItems).map((elem) => {
+          const { id, name, image, description, liveLink } = elem;
+          return (
+            <div key={id}>
+              <div className="single-items">
+                <div className="single-portfolio">
+                  <div className="portfolio-bg">
+                    <img src={image} alt="" srcSet="" />
+                  </div>
+                  <div className="portfolio-view-details">
+                    <Link to={liveLink} target="_blank">
+                      <ImLink />
+                    </Link>
+                  </div>
                 </div>
-                <Carousel>
-                  <div>
-                    <img src={social_chef_banner} />
-                  </div>
-                  <div>
-                    <img src={social_chef1} />
-                  </div>
-                  <div>
-                    <img src={social_chef2} />
-                  </div>
-                  <div>
-                    <img src={social_chef3} />
-                  </div>
-                </Carousel>
-              </Modal.Body>
-            </Modal>
-          </div>
-          <div className="single-recent-project">
-            <div className="image-container">
-              <img src={edu_kids_banner} alt="" />
-              <p className="open-modal-text" onClick={handleShow}>
-                Visit The Website
-              </p>
+              </div>
             </div>
-            <Modal show={showModal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Social Chef</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div className="link-area">
-                  <button>
-                    <a
-                      href="https://chef-hunter-d7d7c.web.app/"
-                      target="_blank"
-                    >
-                      Live site <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-client"
-                      target="_blank"
-                    >
-                      Client site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-server"
-                      target="_blank"
-                    >
-                      Server site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                </div>
-                <Carousel>
-                  <div>
-                    <img src={social_chef_banner} />
-                  </div>
-                  <div>
-                    <img src={social_chef1} />
-                  </div>
-                  <div>
-                    <img src={social_chef2} />
-                  </div>
-                  <div>
-                    <img src={social_chef3} />
-                  </div>
-                </Carousel>
-              </Modal.Body>
-            </Modal>
-          </div>
-          <div className="single-recent-project">
-            <div className="image-container">
-              <img src={social_chef_banner} alt="" />
-              <p className="open-modal-text" onClick={handleShow}>
-                Visit The Website
-              </p>
-            </div>
-            <Modal show={showModal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Social Chef</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div className="link-area">
-                  <button>
-                    <a
-                      href="https://chef-hunter-d7d7c.web.app/"
-                      target="_blank"
-                    >
-                      Live site <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-client"
-                      target="_blank"
-                    >
-                      Client site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-server"
-                      target="_blank"
-                    >
-                      Server site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                </div>
-                <Carousel>
-                  <div>
-                    <img src={social_chef_banner} />
-                  </div>
-                  <div>
-                    <img src={social_chef1} />
-                  </div>
-                  <div>
-                    <img src={social_chef2} />
-                  </div>
-                  <div>
-                    <img src={social_chef3} />
-                  </div>
-                </Carousel>
-              </Modal.Body>
-            </Modal>
-          </div>
-          <div className="single-recent-project">
-            <div className="image-container">
-              <img src={job_hunter_banner} alt="" />
-              <p className="open-modal-text" onClick={handleShow}>
-                Visit The Website
-              </p>
-            </div>
-            <Modal show={showModal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Social Chef</Modal.Title>
-              </Modal.Header>
-              <Modal.Body>
-                <div className="link-area">
-                  <button>
-                    <a
-                      href="https://chef-hunter-d7d7c.web.app/"
-                      target="_blank"
-                    >
-                      Live site <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-client"
-                      target="_blank"
-                    >
-                      Client site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                  <button>
-                    <a
-                      href="https://github.com/ahbanna/chef-hunter-server"
-                      target="_blank"
-                    >
-                      Server site code <FaLine></FaLine>
-                    </a>
-                  </button>
-                </div>
-                <Carousel>
-                  <div>
-                    <img src={social_chef_banner} />
-                  </div>
-                  <div>
-                    <img src={social_chef1} />
-                  </div>
-                  <div>
-                    <img src={social_chef2} />
-                  </div>
-                  <div>
-                    <img src={social_chef3} />
-                  </div>
-                </Carousel>
-              </Modal.Body>
-            </Modal>
-          </div>
-        </div>
+          );
+        })}
       </div>
+      {items.length > 6 && displayedItems < items.length && (
+        <div className="text-center">
+          <button className="btn-hover-mask" onClick={handleLoadMore}>
+            Load More
+          </button>
+        </div>
+      )}
     </div>
   );
 };

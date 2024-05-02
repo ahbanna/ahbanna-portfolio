@@ -22,7 +22,7 @@ note it */
   --font-roboto: "Roboto", sans-serif;
 }
 * {
-  cursor: none;
+  /* cursor: none; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
