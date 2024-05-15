@@ -1,5 +1,5 @@
 .about-area {
-  background-color: var(--bg-five);
+  background-color: var(--bg-four);
   padding: 100px 0;
 }
 .about-area-content {
@@ -8,18 +8,21 @@
   grid-gap: 20px;
   padding-bottom: 70px;
 }
+.about-left strong {
+  color: var(--white-2);
+}
 .details-info li {
   display: grid;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #999;
+  color: var(--gray);
   padding-bottom: 2px;
   grid-template-columns: 130px 40px auto;
 }
 
 .details-info li strong {
-  color: #fff;
+  color: var(--white);
 }
 .social-resume {
   display: flex;
@@ -37,7 +40,6 @@
   margin-top: 20px;
 }
 .about-social-link h6 {
-  color: var(--white);
   border-bottom: 2px solid var(--white);
   display: inline-block;
   padding-bottom: 6px;
@@ -45,17 +47,6 @@
 .about-right {
   position: relative;
 }
-/* .about-right::after {
-  content: "";
-  z-index: 1;
-  width: 390px;
-  height: 390px;
-  position: absolute;
-  right: 10%;
-  bottom: 5%;
-  border-radius: 50%;
-  background: var(--bg-one);
-} */
 .about-right .experience-years {
   position: absolute;
   right: 0;
@@ -98,7 +89,7 @@
 }
 .about-btn h6 {
   font-weight: 700;
-  color: var(--black-color);
+  color: var(--black-color) !important ;
   margin-bottom: 0;
   margin: 0 15px;
 }

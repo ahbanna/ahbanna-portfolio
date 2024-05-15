@@ -2,14 +2,18 @@
 note it */
 @import url("https://fonts.googleapis.com/css2?family=Macondo,family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
-  --bg-one: #0f183e;
+  /* --bg-one: #0f183e; */
+  --bg-one: #26272e;
   --bg-two: #002d3e;
   --bg-three: #0f1d22;
-  --bg-four: #0c252b;
+  /* --bg-four: #0c252b; */
+  --bg-four: #212228;
   --bg-five: #182146;
+  --bg-six: #37384c;
   --white: #ffffff;
   --white-2: #f6f6f6;
   --white-3: #ffeded;
+  --white-4: #eee;
   --black: #070707;
   --black-2: #252629;
   --black-3: #222326;
@@ -17,6 +21,8 @@ note it */
   --gray: #999;
   --blue: #0788ff;
   --orange: #ff5746;
+  --title-color: #f6f6f6;
+  --title-color-2: #37384c;
   --orange-two: #ff3d4f;
   --font-inter: "Inter", sans-serif;
   --font-roboto: "Roboto", sans-serif;
@@ -30,12 +36,11 @@ note it */
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-four);
+  background-color: var(--bg-one) !important;
   font-family: var(--font-inter);
 }
 h1 {
   font-size: 70px !important;
-  color: #f6f6f6 !important;
   line-height: 1 !important;
 }
 
@@ -69,13 +74,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: #000;
+  color: var(--white-2);
   font-family: var(--font-roboto);
   font-weight: 600;
 }
 p {
   font-family: var(--font-inter);
-  color: #999;
+  color: var(--gray);
   line-height: 1.8;
   margin-bottom: 5px;
   hyphens: auto;
@@ -112,9 +117,6 @@ ol {
 ol li {
   list-style: none;
   margin-bottom: 1rem;
-}
-.color-white {
-  color: #fff;
 }
 
 /* CSS for shape */

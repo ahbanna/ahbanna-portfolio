@@ -1,6 +1,5 @@
 .copyright {
-  border-top: 2px solid #afafaf;
-  background: #081828;
+  background-color: var(--bg-one);
   padding: 20px;
 }
 .copyright p {

@@ -15,7 +15,7 @@ const ToggleMode = () => {
       setDarkMode();
     } else {
       setLightMode();
-    } 
+    }
   };
   return (
     <div className="dark_mode">
@@ -26,8 +26,8 @@ const ToggleMode = () => {
         onChange={toggleTheme}
       />
       <label className="dark_mode_label" for="darkmode-toggle">
-        <img src={sun} alt="" srcset="" />
         <img src={moon} alt="" srcset="" />
+        <img src={sun} alt="" srcset="" />
       </label>
     </div>
   );

@@ -23,12 +23,12 @@ const About = () => {
         <div className="about-area-content">
           <div className="about-left">
             <p>
-              Hi, my name is <strong className="color-white">Banna</strong> and
-              a passionate Frontend Developer. I’ve spent most of my waking
-              hours for the last 3 years designing, programming and operating
-              websites go beyond with exclusive designer. Apart from this I love
-              to travel, mentor designers, review design portfolios & read books
-              on everything related to design & development.
+              Hi, my name is <strong>Banna</strong> and a passionate Frontend
+              Developer. I’ve spent most of my waking hours for the last 3 years
+              designing, programming and operating websites go beyond with
+              exclusive designer. Apart from this I love to travel, mentor
+              designers, review design portfolios & read books on everything
+              related to design & development.
             </p>
             <ul className="details-info">
               <li>
@@ -88,7 +88,7 @@ const About = () => {
             </div>
             <div className="about-btn one">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              <h6>Web Designer</h6>
+              <h6>Frontend Developer</h6>
             </div>
             <div className="about-btn two">
               <img src={aboutBtnImg1} alt="" srcset="" />
@@ -96,7 +96,7 @@ const About = () => {
             </div>
             <div className="about-btn three">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              <h6>Web Designer</h6>
+              <h6>Web Programmer</h6>
             </div>
             <div className="about-dot-shape one">
               <img src={abotDotShape} alt="" srcset="" />

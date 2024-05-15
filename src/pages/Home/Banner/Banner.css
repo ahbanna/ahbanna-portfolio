@@ -1,5 +1,5 @@
 .banner-area {
-  background-color: var(--bg-one);
+  /* background-color: var(--bg-four); */
   /* background-color: var(--bg-three); */
 }
 .banner-content {
@@ -11,9 +11,7 @@
   height: 100vh;
 }
 .banner-img img {
-  /* height: 630px; */
   border-radius: 50%;
-  /* border: 10px solid #0788ff; */
   position: relative;
 }
 .banner-text {
@@ -75,15 +73,13 @@
 }
 button a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
 }
 .welcome-text {
-  /* font-size: 20px; */
   font-weight: 500;
-  color: #fff;
-  /* background-color: #05345f; */
+  color: var(--white);
   display: inline-block;
-  /* padding: 2px 20px; */
+  font-family: "Macondo", cursive;
 }
 .welcome-text img {
   height: 30px;
@@ -169,19 +165,6 @@ button a {
 .cta-text:hover::after {
   width: 100%;
 }
-/* .banner-social span {
-  color: #fff;
-  text-transform: uppercase;
-  background: var(--orange);
-  padding: 10px 25px;
-  font-weight: 600;
-  margin-right: 15px;
-  border-radius: 0 40px 40px 0;
-}
-.banner-social {
-  display: flex;
-  margin-top: 30px;
-} */
 .view-works-btn {
   margin-top: 30px;
 }

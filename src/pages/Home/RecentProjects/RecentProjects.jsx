@@ -260,8 +260,8 @@ const RecentProjects = () => {
         })}
       </div>
       {items.length > 6 && displayedItems < items.length && (
-        <div className="text-center">
-          <button className="btn-hover-mask" onClick={handleLoadMore}>
+        <div className="load-more-btn text-center">
+          <button className="secondary-btn" onClick={handleLoadMore}>
             Load More
           </button>
         </div>

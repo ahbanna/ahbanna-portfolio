@@ -1,5 +1,5 @@
 .contact-area {
-  background: var(--bg-five);
+  background: var(--bg-four);
   padding: 120px 0;
 }
 .contact-area .container {
@@ -14,13 +14,13 @@
 }
 .contact-form input {
   border-radius: 0;
-  border: 1px solid #555;
+  border: 1px solid var(--gray);
   transition: all 0.5s;
   background-color: transparent;
 }
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: var(--white-2);
+  color: var(--title-color);
   opacity: 0.5;
 }
 .contact-form .form-control:focus {
@@ -28,11 +28,11 @@
   outline: 0;
   box-shadow: none;
   background: transparent;
-  color: var(--white-2);
+  color: var(--title-color);
 }
 .contact-form textarea {
   border-radius: 0;
-  border: 1px solid #555;
+  border: 1px solid var(--gray);
   background-color: transparent;
 }
 .btn-submit svg {

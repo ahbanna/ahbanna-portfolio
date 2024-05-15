@@ -1,6 +1,6 @@
 .skill-area {
   padding: 80px 0;
-  background: var(--bg-five);
+  background: var(--bg-four);
 }
 .all-skill-imges {
   display: grid;
@@ -44,9 +44,6 @@
 .skill-item:hover span {
   color: #f6f6f6;
   transition: 0.4s;
-}
-.skill-area .section-title {
-  color: #f6f6f6;
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 576px) {

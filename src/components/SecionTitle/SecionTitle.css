@@ -8,7 +8,7 @@
   display: inline-block;
   font-weight: 700;
   margin-bottom: 5px;
-  color: #d5d5d5;
+  color: var(--white-2);
   font-family: "Macondo", cursive;
   text-transform: capitalize;
 }
@@ -17,5 +17,5 @@
   font-weight: 700;
   text-transform: capitalize;
   margin: 20px 0;
-  color: #f6f6f6;
+  color: var(--white-2);
 }
