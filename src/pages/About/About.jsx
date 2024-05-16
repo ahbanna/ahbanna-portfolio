@@ -14,14 +14,18 @@ import SocialList from "../../components/SocialList/SocialList";
 
 const About = () => {
   return (
-    <div className="about-area">
+    <div className="about-area" id="about">
       <Container>
         <SectionTitle
           text="some lines about myself"
           title="about me"
         ></SectionTitle>
         <div className="about-area-content">
-          <div className="about-left">
+          <div
+            className="about-left"
+            data-aos="fade-right"
+            data-aos-duration="1500"
+          >
             <p>
               Hi, my name is <strong>Banna</strong> and a passionate Frontend
               Developer. I’ve spent most of my waking hours for the last 3 years
@@ -78,25 +82,31 @@ const About = () => {
             </div>
           </div>
           <div className="about-right">
-            {/*
-            TODO:
-            change btn text and image 
-            */}
-            <div class="experience-years">
+            <div
+              class="experience-years"
+              data-aos="fade-down"
+              data-aos-duration="3000"
+            >
               <b>3+</b>
               <h5>Years Of Experience</h5>
             </div>
             <div className="about-btn one">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              <h6>Frontend Developer</h6>
+              <h6 data-aos="fade-down" data-aos-duration="800">
+                Frontend Developer
+              </h6>
             </div>
             <div className="about-btn two">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              <h6>Web Designer</h6>
+              <h6 data-aos="fade-down" data-aos-duration="1000">
+                Web Designer
+              </h6>
             </div>
             <div className="about-btn three">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              <h6>Web Programmer</h6>
+              <h6 data-aos="fade-down" data-aos-duration="1200">
+                Web Programmer
+              </h6>
             </div>
             <div className="about-dot-shape one">
               <img src={abotDotShape} alt="" srcset="" />

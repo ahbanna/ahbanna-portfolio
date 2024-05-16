@@ -1,6 +1,5 @@
 import React from "react";
 import "./Contact.css";
-import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
@@ -10,7 +9,7 @@ import { FiSend } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className="contact-area">
+    <div className="contact-area" id="contact">
       <Container>
         <div>
           <SectionTitle
@@ -20,7 +19,11 @@ const Contact = () => {
           ></SectionTitle>
           <SocialList></SocialList>
         </div>
-        <div className="contact-form">
+        <div
+          className="contact-form"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+        >
           <Form>
             <div className="name-email">
               <Form.Group className="mb-3" controlId="formBasicEmail">

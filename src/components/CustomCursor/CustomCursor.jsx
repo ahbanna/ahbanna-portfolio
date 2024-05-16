@@ -44,13 +44,6 @@ const CustomCursor = () => {
           transform: `translate3d(calc(${cursorPosition.x}px - 50%), calc(${cursorPosition.y}px - 50%), 0)`,
         }}
       ></div>
-      {/* <div
-        className={`cursor2 ${isClicking ? "cursorinnerhover" : ""}`}
-        style={{
-          left: cursorPosition.x + "px",
-          top: cursorPosition.y + "px",
-        }}
-      ></div> */}
     </>
   );
 };

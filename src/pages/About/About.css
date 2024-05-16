@@ -54,15 +54,13 @@
   width: 190px;
   height: 190px;
   display: flex;
-  color: #000;
+  color: var(--white);
   padding: 40px;
   font-weight: 700;
   border-radius: 50%;
   flex-direction: column;
   justify-content: center;
-  /* font-family: var(--font-dm_sans);
-	background: var(--primary-color); */
-  background: #fe5000;
+  background: var(--orange);
   transform: translateY(-50%);
   z-index: 2;
 }
@@ -73,14 +71,14 @@
 }
 .experience-years h5 {
   font-size: 20px;
-  color: #000;
+  color: var(--white);
   margin-bottom: 0;
   font-weight: 700;
 }
 .about-btn {
   display: flex;
   align-items: center;
-  background: #fff;
+  background: var(--white);
   border-radius: 32px;
   color: var(--black-color);
   padding: 10px 25px 10px 15px;

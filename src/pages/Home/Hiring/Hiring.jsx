@@ -14,7 +14,7 @@ const Hiring = () => {
             title="I am Available for Freelance Hire"
           ></SectionTitle>
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-center">
           <SecondaryButton
             text="hire me"
             link={"https://www.upwork.com/freelancers/~017ca7c4e0396a0d07"}

@@ -4,7 +4,7 @@
   /* text-transform: uppercase; */
   letter-spacing: 1px;
   border-radius: 30px;
-  border: 2px solid #fe5000;
+  border: 2px solid var(--orange);
   display: inline-block;
   font-weight: 700;
   margin-bottom: 5px;

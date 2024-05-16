@@ -58,7 +58,12 @@ const Service = () => {
         ></SectionTitle>
         <div className="all-services">
           {services.map((service) => (
-            <div className="single-service" key={service.id}>
+            <div
+              className="single-service"
+              key={service.id}
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <p className="service-number">{service.serviceNo}</p>
               {getIconComponent(service.icon)}
               <h3>{service.title}</h3>

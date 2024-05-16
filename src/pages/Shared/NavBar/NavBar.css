@@ -1,9 +1,10 @@
 .header-area {
   background: transparent;
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 3;
 }
 /*  */
 
@@ -30,28 +31,6 @@
   /* color: #fe5000; */
   font-weight: 600;
 }
-/* .menu-items a::before {
-  position: absolute;
-  content: "";
-  height: 2px;
-  width: 100%;
-  background: #fe5000;
-  bottom: 0;
-  transform: scaleX(0);
-  top: 17px;
-  transition: all 300ms ease-in-out 0s;
-}
-.menu-items a::after {
-  position: absolute;
-  content: "";
-  background: #fe5000;
-  width: 2px;
-  height: 26px;
-  right: 7px;
-  top: 12px;
-  transform: scaleY(0);
-  transition: all 400ms ease-in-out 0s;
-} */
 
 .logo-symbol {
   height: 44px;
@@ -82,7 +61,7 @@
 }
 
 .header-area.active {
-  background: red;
+  background-color: var(--bg-one);
   transition: 0.5s;
 }
 .navbar-content {

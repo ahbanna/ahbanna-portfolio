@@ -42,7 +42,7 @@
   width: 40px;
   background: var(--white);
   border-radius: 50%;
-  color: #fff;
+  color: var(--white);
 }
 .testimonial-area .swiper-button-prev {
   left: unset !important;
@@ -53,12 +53,6 @@
   right: 0 !important;
   top: 7%;
 }
-/* .swiper-button-prev::after {
-  transform: rotate(90deg) !important;
-}
-.swiper-button-next::after {
-  transform: rotate(90deg) !important;
-} */
 .testimonial-area .swiper-button-prev::after,
 .testimonial-area .swiper-button-next::after {
   font-size: 16px !important;

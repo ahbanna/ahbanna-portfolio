@@ -8,15 +8,12 @@
 }
 
 .social-list ul li a {
-  /* font-size: 10px; */
   color: var(--white);
   height: 30px;
   width: 30px;
-  /* background: transparent; */
   border-radius: 50%;
   display: inline-block;
   line-height: 30px;
-  /* border: 1px solid #e6e8eb; */
   overflow: hidden;
   transition: width 0.4s ease 0s, background 0.4s ease 0s;
   position: relative;

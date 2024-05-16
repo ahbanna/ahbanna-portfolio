@@ -6,12 +6,6 @@ const SocialListTwo = () => {
   return (
     <div className="secondary-social-area">
       <div className="secondary-social-list">
-        {/* <a
-          className="btn-hover-mask"
-          href="https://www.linkedin.com/in/ahbanna/"
-        >
-          <FaLinkedinIn></FaLinkedinIn>
-        </a> */}
         <ul>
           <li>
             <a

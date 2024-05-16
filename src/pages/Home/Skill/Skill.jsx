@@ -9,23 +9,24 @@ import react from "../../../assets/skills/react.png";
 import nodejs from "../../../assets/skills/nodejs.png";
 import mongodb from "../../../assets/skills/mongodb.png";
 import shopify from "../../../assets/skills/shopify.png";
-import firebase from "../../../assets/skills/firebase.png";
 import git from "../../../assets/skills/git.png";
 import github from "../../../assets/skills/github.png";
-import jquery from "../../../assets/skills/jquery.png";
 import sass from "../../../assets/skills/sass.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
-import SocialListTwo from "../../../components/SocialListTwo/SocialListTwo";
 const Skill = () => {
   return (
-    <div className="skill-area" id="skill">
+    <div className="skill-area" id="skills">
       <Container>
         <SectionTitle
           text="my skills"
           title="Let’s Explore Popular Skills & Experience"
         ></SectionTitle>
-        <div className="all-skill-imges">
+        <div
+          className="all-skill-imges"
+          data-aos="zoom-out-up"
+          data-aos-duration="1500"
+        >
           <div className="skill-item">
             <div className="skill-icon">
               <img src={figma} alt="" />
@@ -56,12 +57,6 @@ const Skill = () => {
             </div>
             <span>JS</span>
           </div>
-          {/* <div className="skill-item">
-            <div className="skill-icon">
-              <img src={jquery} alt="" />
-            </div>
-            <span>Jquery</span>
-          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={react} alt="" />
@@ -80,13 +75,6 @@ const Skill = () => {
             </div>
             <span>MongoDB</span>
           </div>
-
-          {/* <div className="skill-item">
-            <div className="skill-icon">
-              <img src={firebase} alt="" />
-            </div>
-            <span>Firebase</span>
-          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={git} alt="" />

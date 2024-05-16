@@ -28,7 +28,7 @@
   width: 100%;
 }
 .portfolio-bg::after {
-  background: #000000 none repeat scroll 0 0;
+  background: var(--black) none repeat scroll 0 0;
   content: "";
   /* height: 100%; */
   left: 0;
@@ -72,11 +72,10 @@
 .portfolio-view-details a:hover {
   background: var(--orange);
   border-color: var(--orange);
-  color: #fff;
+  color: var(--white);
 }
 .portfolio-view-details a svg {
   transform: rotate(45deg);
-  /* transform: rotate(-45deg); */
 }
 .nav-item {
   margin: 0 3px;

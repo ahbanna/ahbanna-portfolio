@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ScrollToTop.css";
 import scrollTop from "../../../src/assets/top.png";
-import Lottie from "lottie-react";
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);

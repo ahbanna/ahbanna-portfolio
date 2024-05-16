@@ -3,11 +3,7 @@
   z-index: 9;
 }
 .secondary-social-list {
-  /* display: flex;
-  gap: 10px;
-  justify-content: space-between; */
-
-  translate: none;
+translate: none;
   rotate: none;
   scale: none;
   opacity: 1;
@@ -18,7 +14,6 @@
   font-weight: 500;
   padding: 18px 30px;
   border-radius: 30px;
-  /* border-color: var(--orange); */
   text-transform: uppercase;
 }
 .btn-hover-mask {
@@ -33,7 +28,6 @@
   color: var(--white);
   font-weight: 400;
   font-size: 16px;
-  /* border: 1px solid var(--white); */
   z-index: 1;
 }
 .btn-hover-mask::after {

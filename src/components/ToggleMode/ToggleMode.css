@@ -107,9 +107,6 @@
   height: 0;
   visibility: hidden;
 }
-.dark_mode_input:checked + .dark_mode_label {
-  background: #242424;
-}
 .dark_mode_input:checked + .dark_mode_label:after {
   left: 65px;
   transform: translateX(-100%);
