@@ -79,3 +79,35 @@
     mask-position: 0 0;
   }
 }
+
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .primary-btn a {
+    padding: 10px 25px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .primary-btn a {
+    padding: 10px 25px;
+    font-size: 13px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .primary-btn a {
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .primary-btn a {
+    padding: 10px 25px;
+    font-size: 12px;
+  }
+}

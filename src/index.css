@@ -1,5 +1,3 @@
-/* TODO:
-note it */
 @import url("https://fonts.googleapis.com/css2?family=Macondo,family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 :root {
   /* --bg-one: #0f183e; */
@@ -147,4 +145,33 @@ ol li {
 .shape-five {
   animation: tp_zoom_in_out 2s linear infinite;
   text-align: center;
+}
+
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  p {
+    font-size: 14px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 14px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+  }
 }

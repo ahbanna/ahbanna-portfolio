@@ -1,6 +1,6 @@
 .about-area {
   background-color: var(--bg-four);
-  padding: 100px 0;
+  padding: 130px 0;
 }
 .about-area-content {
   display: grid;
@@ -43,9 +43,12 @@
   border-bottom: 2px solid var(--white);
   display: inline-block;
   padding-bottom: 6px;
+  font-size: 16px;
+  color: var(--white-2);
 }
 .about-right {
   position: relative;
+  overflow: hidden;
 }
 .about-right .experience-years {
   position: absolute;
@@ -126,7 +129,63 @@
 }
 
 /* RESPONSIVE */
-@media only screen and (max-width: 576px) {
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-area {
+    padding: 60px 0;
+  }
+  .about-area-content {
+    padding-bottom: 0px;
+  }
+  .details-info li {
+    font-size: 14px;
+  }
+  .social-resume {
+    flex-direction: column;
+  }
+  .resume-btn {
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+  .about-btn {
+    padding: 5px 15px 5px 15px;
+  }
+  .about-btn h6 {
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  .about-btn.one {
+    left: 0%;
+    top: 20%;
+  }
+  .about-btn.two {
+    left: 10%;
+    top: 42%;
+  }
+  .about-btn.three {
+    left: 0%;
+    bottom: 28%;
+  }
+  .about-right .experience-years {
+    top: 22%;
+    width: 170px;
+    height: 170px;
+  }
+  .experience-years h5 {
+    font-size: 18px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/* Mobile device */
+@media (max-width: 575px) {
   .about-me-info {
     grid-template-columns: repeat(1, 1fr);
   }

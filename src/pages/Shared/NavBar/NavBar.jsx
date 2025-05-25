@@ -4,6 +4,7 @@ import "./NavBar.css";
 import { NavLink } from "react-router-dom";
 import ToggleMode from "../../../components/ToggleMode/ToggleMode";
 import { HiMenuAlt1 } from "react-icons/hi";
+import logo from "../../../assets/logo.png";
 
 const NavBar = () => {
   const [header, setHeader] = useState(false);
@@ -43,13 +44,18 @@ const NavBar = () => {
       <header>
         <Container>
           <Navbar>
-            <div className="logo d-flex align-items-center">
+            {/* <div className="logo d-flex align-items-center">
               <div className="logo-symbol">
                 <NavLink to="/">B</NavLink>
               </div>
               <div className="logo-text">
                 <NavLink to="/">Banna</NavLink>
-              </div>
+              </div> 
+            </div> */}
+            <div className="logo">
+              <NavLink to="/">
+                <img src={logo} alt="" srcset="" />
+              </NavLink>
             </div>
             {/* Hamburger icon */}
             <div className="hamburger-menu" onClick={toggleMenu}>

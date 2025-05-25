@@ -19,3 +19,35 @@
   margin: 20px 0;
   color: var(--white-2);
 }
+
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 40px;
+  }
+  .section-title-container span {
+    font-size: 14px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .section-title {
+    font-size: 28px;
+  }
+}

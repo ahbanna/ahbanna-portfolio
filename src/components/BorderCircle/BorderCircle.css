@@ -8,3 +8,25 @@
   animation-delay: 1s;
   animation-duration: 1s;
 }
+
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .border-circle span {
+    height: 400px;
+    width: 400px;
+    border: 70px solid hsla(0, 0%, 100%, 0.04);
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+/* Mobile device */
+@media (max-width: 575px) {
+}
