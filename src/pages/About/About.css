@@ -6,7 +6,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
-  padding-bottom: 70px;
 }
 .about-left strong {
   color: var(--white-2);
@@ -27,11 +26,12 @@
 .social-resume {
   display: flex;
   margin-top: 30px;
+  justify-content: space-between;
 }
 .resume-btn {
   margin-top: 40px;
   display: inline-block;
-  margin-left: 30%;
+  /* margin-left: 30%; */
 }
 .resume-btn:hover svg {
   color: var(--black);
@@ -131,6 +131,24 @@
 /* RESPONSIVE */
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .about-area {
+    padding: 80px 0;
+  }
+  .about-right .experience-years {
+    top: 25%;
+  }
+  .about-btn.one {
+    left: 0%;
+    top: 20%;
+  }
+  .about-btn.two {
+    left: 13%;
+    top: 43%;
+  }
+  .about-btn.three {
+    left: 0%;
+    bottom: 23%;
+  }
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -180,16 +198,165 @@
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
+  .about-area {
+    padding: 60px 0;
+  }
+  .about-area-content {
+    padding-bottom: 0px;
+    grid-gap: 10px;
+  }
+  .details-info li {
+    font-size: 14px;
+  }
+  .social-resume {
+    flex-direction: column;
+  }
+  .resume-btn {
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+  .social-resume {
+    margin-top: 5px;
+  }
+  .about-btn {
+    padding: 2px 15px 2px 15px;
+  }
+  .about-btn h6 {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .about-btn.one {
+    left: 0%;
+    top: 10%;
+  }
+  .about-btn.two {
+    left: 10%;
+    top: 25%;
+  }
+  .about-btn.three {
+    left: 0%;
+    bottom: 53%;
+  }
+
+  .about-right .experience-years {
+    top: 14%;
+    width: 130px;
+    height: 130px;
+  }
+  .experience-years b {
+    font-size: 35px;
+  }
+  .experience-years h5 {
+    font-size: 12px;
+  }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
+  .about-area {
+    padding: 60px 0;
+  }
+  .about-area-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 0px;
+  }
+  .details-info li {
+    font-size: 14px;
+  }
+  .resume-btn {
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+  .social-resume {
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+  .about-right {
+    margin: 0 auto;
+    overflow: inherit;
+  }
+  .about-btn {
+    padding: 2px 15px 2px 15px;
+  }
+  .about-btn h6 {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .about-btn.one {
+    left: -10%;
+    top: 20%;
+  }
+  .about-btn.two {
+    left: 5%;
+    top: 39%;
+  }
+  .about-btn.three {
+    left: -10%;
+    bottom: 34%;
+  }
+  .about-right .experience-years {
+    top: 22%;
+    width: 150px;
+    height: 150px;
+    left: 72%;
+  }
+  .experience-years h5 {
+    font-size: 16px;
+  }
 }
 /* Mobile device */
 @media (max-width: 575px) {
-  .about-me-info {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .about-area {
-    padding: 120px 0 50px 0;
+    padding: 40px 0;
+  }
+  .about-area-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 0px;
+  }
+  .details-info li {
+    font-size: 14px;
+  }
+  .resume-btn {
+    margin-top: 20px;
+    margin-left: 0%;
+  }
+  .social-resume {
+    margin-top: 5px;
+    justify-content: space-between;
+  }
+  .about-right {
+    margin: 0 auto;
+    overflow: inherit;
+    padding-top: 30px;
+  }
+  .about-btn {
+    padding: 2px 15px 2px 15px;
+  }
+  .about-btn h6 {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .about-btn.one {
+    left: -24%;
+    top: 20%;
+  }
+  .about-btn.two {
+    left: 4%;
+    top: 38%;
+  }
+  .about-btn.three {
+    left: -21%;
+    bottom: 34%;
+  }
+  .about-right .experience-years {
+    top: 24%;
+    width: 130px;
+    height: 130px;
+    left: 70%;
+  }
+  .experience-years h5 {
+    font-size: 12px;
+  }
+  .experience-years b {
+    font-size: 30px;
   }
 }

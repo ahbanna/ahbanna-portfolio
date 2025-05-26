@@ -12,6 +12,11 @@
 /* RESPONSIVE */
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  .border-circle span {
+    height: 420px;
+    width: 420px;
+    border: 70px solid hsla(0, 0%, 100%, 0.04);
+  }
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -23,10 +28,31 @@
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
+  .border-circle span {
+    height: 300px;
+    width: 300px;
+    border: 50px solid hsla(0, 0%, 100%, 0.04);
+  }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
+  .about-right .border-circle {
+    position: unset;
+  }
+  .border-circle span {
+    height: 350px;
+    width: 350px;
+    border: 70px solid hsla(0, 0%, 100%, 0.04);
+  }
 }
 /* Mobile device */
 @media (max-width: 575px) {
+  .about-right .border-circle {
+    position: unset;
+  }
+  .border-circle span {
+    height: 250px;
+    width: 250px;
+    border: 30px solid hsla(0, 0%, 100%, 0.04);
+  }
 }

@@ -38,16 +38,25 @@
   .section-title {
     font-size: 36px;
   }
+  .section-title-container span {
+    font-size: 13px;
+  }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .section-title {
     font-size: 32px;
   }
+  .section-title-container span {
+    font-size: 13px;
+  }
 }
 /* Mobile device */
 @media (max-width: 575px) {
   .section-title {
     font-size: 28px;
+  }
+  .section-title-container span {
+    font-size: 12px;
   }
 }
