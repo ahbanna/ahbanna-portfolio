@@ -1,6 +1,6 @@
 .about-area {
   background-color: var(--bg-four);
-  padding: 130px 0;
+  padding: 80px 0;
 }
 .about-area-content {
   display: grid;
@@ -131,9 +131,6 @@
 /* RESPONSIVE */
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .about-area {
-    padding: 80px 0;
-  }
   .about-right .experience-years {
     top: 25%;
   }

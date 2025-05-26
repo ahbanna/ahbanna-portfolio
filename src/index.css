@@ -150,6 +150,9 @@ ol li {
 /* RESPONSIVE */
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
+  p {
+    font-size: 15px;
+  }
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
