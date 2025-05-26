@@ -7,3 +7,32 @@
   justify-content: space-between;
   align-items: center;
 }
+
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .hiring-area {
+    padding: 30px 0;
+  }
+  .hiring-area .container {
+    flex-direction: column;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .hiring-area {
+    padding: 30px 0;
+  }
+  .hiring-area .container {
+    flex-direction: column;
+  }
+}

@@ -39,22 +39,30 @@
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
+  .secondary-btn {
+    padding: 7px 30px;
+    font-size: 13px;
+  }
 }
+
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .secondary-btn {
+    padding: 7px 30px;
     font-size: 12px;
   }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .secondary-btn {
+    padding: 7px 25px;
     font-size: 12px;
   }
 }
 /* Mobile device */
 @media (max-width: 575px) {
   .secondary-btn {
+    padding: 7px 25px;
     font-size: 11px;
   }
 }

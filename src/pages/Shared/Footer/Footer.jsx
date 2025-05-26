@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <div>
       <div className="copyright">
-        <p>© 2024 Al Hasanul Banna. All rights reserved.</p>
+        <p>© 2025 Hasanul Banna. All rights reserved.</p>
       </div>
     </div>
   );

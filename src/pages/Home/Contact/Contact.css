@@ -1,15 +1,20 @@
 .contact-area {
   background: var(--bg-four);
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .contact-area .container {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-gap: 15px;
+  /* overflow: hidden; */
+}
+.contact-form .form-control {
+  width: 96%;
 }
 .name-email {
   display: grid;
-  grid-template-columns: 49% 49%;
-  grid-column-gap: 12px;
+  grid-template-columns: 48% 47%;
+  grid-column-gap: 18px;
   overflow: hidden;
 }
 .contact-form input {
@@ -38,9 +43,62 @@
 .btn-submit svg {
   font-size: 20px;
 }
+
 /* RESPONSIVE */
-@media only screen and (max-width: 576px) {
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
   .contact-area {
-    padding: 25px 0;
+    padding: 60px 0;
+  }
+  .contact-form .form-control {
+    font-size: 14px;
+  }
+  .name-email {
+    grid-column-gap: 14px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-area {
+    padding: 50px 0;
+  }
+  .contact-form .form-control {
+    font-size: 13px;
+  }
+  .name-email {
+    grid-column-gap: 10px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .contact-area {
+    padding: 40px 0;
+  }
+  .contact-area .container {
+    grid-template-columns: 100%;
+  }
+  .contact-form .form-control {
+    font-size: 13px;
+  }
+  .name-email {
+    grid-column-gap: 15px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .contact-area {
+    padding: 40px 0;
+  }
+  .contact-area .container {
+    grid-template-columns: 100%;
+  }
+  .contact-form .form-control {
+    font-size: 13px;
+  }
+  .name-email {
+    grid-column-gap: 12px;
   }
 }

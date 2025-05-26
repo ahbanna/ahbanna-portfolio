@@ -36,7 +36,7 @@
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .section-title {
-    font-size: 36px;
+    font-size: 32px;
   }
   .section-title-container span {
     font-size: 13px;
@@ -45,7 +45,7 @@
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .section-title {
-    font-size: 32px;
+    font-size: 26px;
   }
   .section-title-container span {
     font-size: 13px;
@@ -54,7 +54,7 @@
 /* Mobile device */
 @media (max-width: 575px) {
   .section-title {
-    font-size: 28px;
+    font-size: 24px;
   }
   .section-title-container span {
     font-size: 12px;
