@@ -17,7 +17,7 @@ const Hiring = () => {
         <div data-aos="fade-up" data-aos-anchor-placement="top-center">
           <SecondaryButton
             text="hire me"
-            link={"https://www.upwork.com/freelancers/~017ca7c4e0396a0d07"}
+            link={"https://wa.me/8801723659531"}
           ></SecondaryButton>
         </div>
       </Container>

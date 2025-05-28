@@ -33,7 +33,7 @@ const Testimonial = () => {
             }}
             spaceBetween={30}
             autoplay={{
-              delay: 20000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             navigation={true}

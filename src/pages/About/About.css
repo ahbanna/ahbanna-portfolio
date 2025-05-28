@@ -31,7 +31,6 @@
 .resume-btn {
   margin-top: 40px;
   display: inline-block;
-  /* margin-left: 30%; */
 }
 .resume-btn:hover svg {
   color: var(--black);
@@ -48,7 +47,6 @@
 }
 .about-right {
   position: relative;
-  /* overflow: hidden; */
 }
 .about-right .experience-years {
   position: absolute;

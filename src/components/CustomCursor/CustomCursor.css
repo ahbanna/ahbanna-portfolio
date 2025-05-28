@@ -34,3 +34,9 @@
   height: 50px;
   opacity: 0.5;
 }
+
+@media (max-width: 575px) {
+  .cursor {
+    display: none;
+  }
+}

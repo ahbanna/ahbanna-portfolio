@@ -155,25 +155,13 @@ ol li {
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
-  p {
-    font-size: 15px;
-  }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
-  p {
-    font-size: 15px;
-  }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
-  p {
-    font-size: 15px;
-  }
 }
 /* Mobile device */
 @media (max-width: 575px) {
-  p {
-    font-size: 15px;
-  }
 }

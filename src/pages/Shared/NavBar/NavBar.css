@@ -1,12 +1,10 @@
-.header-area {
+/* .header-area {
   background: transparent;
-  /* position: absolute; */
   position: fixed;
   left: 0;
   right: 0;
   z-index: 3;
 }
-/*  */
 
 .header-area .navbar {
   display: flex;
@@ -28,7 +26,6 @@
   position: relative;
 }
 .menu-items a.active {
-  /* color: #fe5000; */
   font-weight: 600;
 }
 
@@ -69,8 +66,7 @@
   align-items: center;
   justify-content: space-between;
 }
-/*  */
-/* Add styles for hamburger icon and hide the menu items by default */
+
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -135,7 +131,6 @@
     z-index: 100;
     transition: 2s;
   }
-
   .menu-items.show {
     display: flex;
     transition: 2s;
@@ -160,5 +155,111 @@
   }
   .dark_mode {
     display: none !important;
+  }
+} */
+
+.header-area {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  z-index: 999;
+  padding: 10px 0;
+}
+.header-area.active {
+  background-color: var(--bg-one);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.logo img {
+  height: auto;
+}
+
+.menu-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-items a {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px;
+  position: relative;
+  background: transparent;
+  letter-spacing: 1px;
+}
+.menu-items a.active {
+  font-weight: 600;
+  background: transparent;
+  color: var(--orange) !important;
+  letter-spacing: 0 !important;
+  padding: 0;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.menu-items a::before {
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--orange);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.menu-items a::after {
+  position: absolute;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--orange);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  bottom: 8px;
+  width: 0;
+  height: 1px;
+}
+.menu-items a:hover {
+  color: var(--orange);
+  background: transparent;
+}
+.menu-items a:hover::before {
+  opacity: 1;
+  visibility: visible;
+  top: 10px;
+}
+.menu-items a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+.offcanvas {
+  align-items: center;
+  background: #2b3035;
+}
+.navbar-toggler.collapsed {
+  background: var(--orange);
+}
+.navbar-toggler-icon {
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .menu-items {
+    flex-direction: column;
+    padding-top: 1rem;
   }
 }

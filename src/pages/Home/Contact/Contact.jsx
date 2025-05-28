@@ -46,11 +46,7 @@ const Contact = () => {
           <SocialList></SocialList>
         </div>
 
-        <div
-          className="contact-form"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
-        >
+        <div className="contact-form">
           {status === "success" && (
             <Alert variant="success">
               {" "}
@@ -95,12 +91,10 @@ const Contact = () => {
                 required
               />
             </Form.Group>
-            <div className="btn-submit">
-              <button type="submit">
-                Send Message
-                <FiSend />
-              </button>
-            </div>
+            <button type="submit" className="btn-submit">
+              Send Message
+              <FiSend />
+            </button>
           </Form>
         </div>
       </Container>

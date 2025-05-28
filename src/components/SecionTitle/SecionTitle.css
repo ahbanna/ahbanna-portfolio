@@ -1,6 +1,6 @@
 .section-title-container span {
   padding: 7px 30px;
-  font-size: 14px;
+  font-size: 16px;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
   border-radius: 30px;
@@ -29,17 +29,11 @@
   .section-title {
     font-size: 38px;
   }
-  .section-title-container span {
-    font-size: 14px;
-  }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .section-title {
     font-size: 36px;
-  }
-  .section-title-container span {
-    font-size: 13px;
   }
 }
 /* SM devices */
@@ -47,16 +41,10 @@
   .section-title {
     font-size: 32px;
   }
-  .section-title-container span {
-    font-size: 13px;
-  }
 }
 /* Mobile device */
 @media (max-width: 575px) {
   .section-title {
-    font-size: 24px;
-  }
-  .section-title-container span {
-    font-size: 12px;
+    font-size: 26px;
   }
 }

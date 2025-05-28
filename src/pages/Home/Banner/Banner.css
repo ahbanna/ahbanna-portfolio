@@ -1,8 +1,3 @@
-/* #banner {
-  width: 1500px;
-  margin: 0 auto;
-  overflow: hidden;
-} */
 .banner-content {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -25,24 +20,6 @@
   position: relative;
   z-index: 10;
 }
-/* .banner-img::before {
-  position: absolute;
-  content: "";
-  top: -25%;
-  left: -15%;
-  transform: translate(-50%, -50%);
-  bottom: 15%;
-  width: 550px;
-  height: 550px;
-  background: var(--orange);
-  border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-  will-change: border-radius, transform, opacity;
-  animation: sliderShape 5s linear infinite;
-  display: block;
-  z-index: 0;
-  -webkit-animation: sliderShape 5s linear infinite;
-} */
-
 .banner-img::before {
   position: absolute;
   content: "";
@@ -237,7 +214,7 @@ button a {
     font-size: 54px;
   }
   .animated-text {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 /* Large device */
@@ -256,10 +233,10 @@ button a {
     font-size: 14px;
   }
   .dev-name {
-    font-size: 42px;
+    font-size: 50px;
   }
   .animated-text {
-    font-size: 19px;
+    font-size: 24px;
   }
 }
 /* MD device */
@@ -278,10 +255,10 @@ button a {
     font-size: 13px;
   }
   .dev-name {
-    font-size: 32px;
+    font-size: 42px;
   }
   .animated-text {
-    font-size: 18px;
+    font-size: 22px;
   }
 }
 /* SM devices */
@@ -315,10 +292,10 @@ button a {
     font-size: 13px;
   }
   .dev-name {
-    font-size: 30px;
+    font-size: 36px;
   }
   .animated-text {
-    font-size: 16px;
+    font-size: 20px;
   }
   .view-works-btn {
     margin-top: 20px;
@@ -364,10 +341,10 @@ button a {
     font-size: 12px;
   }
   .dev-name {
-    font-size: 28px;
+    font-size: 32px;
   }
   .animated-text {
-    font-size: 15px;
+    font-size: 18px;
   }
   .view-works-btn {
     margin-top: 20px;
