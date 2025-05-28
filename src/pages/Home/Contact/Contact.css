@@ -10,6 +10,12 @@
 }
 .contact-form .form-control {
   width: 96%;
+  color: var(--white);
+}
+.contact-form svg {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 3px;
 }
 .name-email {
   display: grid;
@@ -41,7 +47,60 @@
   background-color: transparent;
 }
 .btn-submit svg {
-  font-size: 20px;
+  font-size: 17px;
+  margin-left: 5px;
+}
+.btn-submit {
+  overflow: hidden;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.25s all ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  position: relative;
+  z-index: 1;
+  padding: 10px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  background-color: transparent;
+  outline: none !important;
+  border: 1px solid var(--orange);
+  letter-spacing: 2px;
+}
+.btn-submit::before {
+  z-index: -3;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translate(100%);
+  transition: 0.3s ease-out all;
+  background-color: var(--orange);
+}
+.btn-submit:hover::before {
+  transform: translate(0);
+}
+.btn-submit button {
+  background: top;
+  border: navajowhite;
+  color: var(--white);
+  text-transform: unset;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.contact-form .alert-success {
+  background: #11b823 !important;
+  border: navajowhite;
+  border-radius: 0;
+  color: var(--white);
+  padding: 7px 20px;
+  display: inline-block;
+  font-size: 14px;
 }
 
 /* RESPONSIVE */

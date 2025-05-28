@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Contact.css";
 import Form from "react-bootstrap/Form";
-import { Container } from "react-bootstrap";
+import { Container, Alert } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
 import SocialList from "../../../components/SocialList/SocialList";
-import SecondaryButton from "../../../components/SecondaryButton/SecondaryButton";
 import { FiSend } from "react-icons/fi";
+import { FaCheckCircle } from "react-icons/fa";
+
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const formRef = useRef();
+  const [status, setStatus] = useState(null); // 'success' | 'error'
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_i421tgv",
+        "template_7086ywv",
+        formRef.current,
+        "xz2JdTLj5EXDXLtwU"
+      )
+      .then(
+        () => {
+          setStatus("success");
+          e.target.reset();
+        },
+        () => {
+          setStatus("error");
+        }
+      );
+  };
+
   return (
     <div className="contact-area" id="contact">
       <Container>
@@ -19,38 +45,65 @@ const Contact = () => {
           ></SectionTitle>
           <SocialList></SocialList>
         </div>
-        <div
-          className="contact-form"
-          // data-aos="fade-up"
-          // data-aos-anchor-placement="top-center"
-        >
-          <Form>
+
+        <div className="contact-form">
+          {status === "success" && (
+            <Alert variant="success">
+              {" "}
+              <FaCheckCircle />
+              Thanks for your message. We'll respond as soon as possible
+            </Alert>
+          )}
+          {status === "error" && (
+            <Alert variant="danger">
+              Something went wrong. Please try again.
+            </Alert>
+          )}
+
+          <Form ref={formRef} onSubmit={sendEmail}>
             <div className="name-email">
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="text" placeholder="Name" />
+              <Form.Group className="mb-3">
+                <Form.Control
+                  type="text"
+                  name="user_name"
+                  placeholder="Name"
+                  required
+                />
               </Form.Group>
-              <Form.Group className="mb-3" controlId="formBasicEmail">
-                <Form.Control type="email" placeholder="Email" />
+              <Form.Group className="mb-3">
+                <Form.Control
+                  type="email"
+                  name="user_email"
+                  placeholder="Email"
+                  required
+                />
               </Form.Group>
             </div>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="text" placeholder="Subject" />
+            <Form.Group className="mb-3">
+              <Form.Control type="text" name="subject" placeholder="Subject" />
             </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Group className="mb-3">
               <Form.Control
                 as="textarea"
+                name="message"
                 rows={5}
-                placeholder="Type Your Message Here "
+                placeholder="Type Your Message Here"
+                required
               />
             </Form.Group>
             <div className="btn-submit">
-              <SecondaryButton
+              {/* <SecondaryButton
                 text={
                   <>
                     send message <FiSend />
                   </>
                 }
-              ></SecondaryButton>
+              /> */}
+              <button type="submit">
+                Send Message
+                <FiSend />
+              </button>
+              {/* <input type="submit" value="Send Message" /> <FiSend /> */}
             </div>
           </Form>
         </div>
