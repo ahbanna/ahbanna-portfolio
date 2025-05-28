@@ -12,6 +12,11 @@ import shopify from "../../../assets/skills/shopify.png";
 import git from "../../../assets/skills/git.png";
 import github from "../../../assets/skills/github.png";
 import sass from "../../../assets/skills/sass.png";
+import ga4 from "../../../assets/skills/ga4.png";
+import gtm from "../../../assets/skills/gtm.png";
+import gads from "../../../assets/skills/gads.png";
+import fb from "../../../assets/skills/fb.png";
+import next from "../../../assets/skills/next.png";
 import { Container } from "react-bootstrap";
 import SectionTitle from "../../../components/SecionTitle/SecionTitle";
 const Skill = () => {
@@ -24,15 +29,15 @@ const Skill = () => {
         ></SectionTitle>
         <div
           className="all-skill-imges"
-          data-aos="zoom-out-up"
-          data-aos-duration="1500"
+          // data-aos="zoom-out-up"
+          // data-aos-duration="1500"
         >
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={figma} alt="" />
             </div>
             <span>Figma</span>
-          </div>
+          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={html} alt="" />
@@ -45,12 +50,12 @@ const Skill = () => {
             </div>
             <span>CSS</span>
           </div>
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={sass} alt="" />
             </div>
             <span>Sass</span>
-          </div>
+          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={js} alt="" />
@@ -63,11 +68,17 @@ const Skill = () => {
             </div>
             <span>React</span>
           </div>
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={nodejs} alt="" />
             </div>
             <span>NodeJs</span>
+          </div> */}
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={next} alt="" />
+            </div>
+            <span>Next.js</span>
           </div>
           <div className="skill-item">
             <div className="skill-icon">
@@ -75,18 +86,18 @@ const Skill = () => {
             </div>
             <span>MongoDB</span>
           </div>
-          <div className="skill-item">
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={git} alt="" />
             </div>
             <span>Git</span>
-          </div>
-          <div className="skill-item">
+          </div> */}
+          {/* <div className="skill-item">
             <div className="skill-icon">
               <img src={github} alt="" />
             </div>
             <span>Github</span>
-          </div>
+          </div> */}
           <div className="skill-item">
             <div className="skill-icon">
               <img src={wordpress} alt="" />
@@ -98,6 +109,30 @@ const Skill = () => {
               <img src={shopify} alt="" />
             </div>
             <span>Shopify</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={gtm} alt="" />
+            </div>
+            <span>GTM</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={ga4} alt="" />
+            </div>
+            <span>GA4</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={fb} alt="" />
+            </div>
+            <span>FB Pixel</span>
+          </div>
+          <div className="skill-item">
+            <div className="skill-icon">
+              <img src={gads} alt="" />
+            </div>
+            <span>Googs Ads</span>
           </div>
         </div>
       </Container>

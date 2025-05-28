@@ -113,6 +113,7 @@ const RecentProjects = () => {
           return (
             <div key={id}>
               <div className="single-items" data-aos="zoom-out-up">
+                {/* <div className="single-items"> */}
                 <div className="single-portfolio">
                   <div className="portfolio-bg">
                     <img src={image} alt="" srcSet="" />

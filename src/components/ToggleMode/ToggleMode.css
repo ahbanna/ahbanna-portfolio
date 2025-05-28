@@ -138,3 +138,9 @@
 .dark_mode_input:checked + .dark_mode_label svg.moon {
   fill: #fff;
 }
+
+@media (max-width: 991px) {
+  .dark_mode {
+    display: none !important;
+  }
+}

@@ -3,7 +3,8 @@
   bottom: 50px;
   right: 3%;
   position: fixed;
-  z-index: 1;
+  z-index: 100;
+  /* display: none; */
 }
 .scrollIcon img {
   height: 50px;
@@ -29,9 +30,31 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 991px) {
+/* RESPONSIVE */
+/* Extra Large / Desktop device */
+@media (min-width: 1200px) and (max-width: 1399px) {
+}
+/* Large device */
+@media (min-width: 992px) and (max-width: 1199px) {
   .scrollIcon img {
-    height: 50px;
+    height: 40px;
+  }
+}
+/* MD device */
+@media (min-width: 768px) and (max-width: 991px) {
+  .scrollIcon img {
+    height: 35px;
+  }
+}
+/* SM devices */
+@media (min-width: 576px) and (max-width: 767px) {
+  .scrollIcon img {
+    height: 30px;
+  }
+}
+/* Mobile device */
+@media (max-width: 575px) {
+  .scrollIcon img {
+    height: 25px;
   }
 }

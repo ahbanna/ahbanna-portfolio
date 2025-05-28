@@ -49,11 +49,11 @@
   },
   {
     "id": 7,
-    "image": "https://i.ibb.co/v4RPsfM/wordpress-1.png",
-    "name": "motorcycle",
+    "image": "https://i.ibb.co/dsnFmDkc/Screenshot-20.png",
+    "name": "spa",
     "category": "wordpress",
     "description": "Lorem ipsum dolor sit amet",
-    "liveLink": "https://ghmotorcycles.co.uk/"
+    "liveLink": "https://ezanza.dk/"
   },
   {
     "id": 8,
@@ -73,6 +73,30 @@
   },
   {
     "id": 10,
+    "image": "https://i.ibb.co/ksCJTd6n/Screenshot-21.png",
+    "name": "Menz crown",
+    "category": "wordpress",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://menzcrown.com/"
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/ycwh3fvQ/Screenshot-22.png",
+    "name": "Ielts bangladesh",
+    "category": "wordpress",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://ieltsbd.co/"
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/Kzst3St9/Screenshot-23.png",
+    "name": "Car repair",
+    "category": "wordpress",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://az-auto.com.au/"
+  },
+  {
+    "id": 13,
     "image": "https://i.ibb.co/kxdtv8h/shopify-2.png",
     "name": "wacaco",
     "category": "shopify",
@@ -80,7 +104,7 @@
     "liveLink": "https://www.wacaco.com/"
   },
   {
-    "id": 11,
+    "id": 14,
     "image": "https://i.ibb.co/hCDs7wm/shopify-1.png",
     "name": "Dufrane watches",
     "category": "shopify",
@@ -88,11 +112,19 @@
     "liveLink": "https://www.dufranewatches.com/"
   },
   {
-    "id": 12,
+    "id": 15,
     "image": "https://i.ibb.co/cNFCJ8j/shopify-3.png",
     "name": "Drink mana",
     "category": "shopify",
     "description": "Lorem ipsum dolor sit amet",
     "liveLink": "https://drink-mana.com/"
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/twxysB0q/Screenshot-24.png",
+    "name": "Saloon",
+    "category": "shopify",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://aviarybeauty.com/"
   }
 ]

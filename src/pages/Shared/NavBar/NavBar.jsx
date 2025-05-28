@@ -44,79 +44,73 @@ const NavBar = () => {
       <header>
         <Container>
           <Navbar>
-            {/* <div className="logo d-flex align-items-center">
-              <div className="logo-symbol">
-                <NavLink to="/">B</NavLink>
-              </div>
-              <div className="logo-text">
-                <NavLink to="/">Banna</NavLink>
-              </div> 
-            </div> */}
             <div className="logo">
               <NavLink to="/">
                 <img src={logo} alt="" srcset="" />
               </NavLink>
             </div>
             {/* Hamburger icon */}
-            <div className="hamburger-menu" onClick={toggleMenu}>
-              <HiMenuAlt1 />
+            <div className="menu-wrapper">
+              <div className="hamburger-menu" onClick={toggleMenu}>
+                <HiMenuAlt1 />
+              </div>
+              <Nav className={`menu-items ${showMenu ? "show" : ""}`}>
+                <NavLink
+                  to="#banner"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("banner");
+                  }}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  to="#about"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("about");
+                  }}
+                >
+                  About Me
+                </NavLink>
+                <NavLink
+                  to="#services"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("services");
+                  }}
+                >
+                  Services
+                </NavLink>
+                <NavLink
+                  to="#skills"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("skills");
+                  }}
+                >
+                  Skill
+                </NavLink>
+                <NavLink
+                  to="#projects"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("projects");
+                  }}
+                >
+                  Projects
+                </NavLink>
+                <NavLink
+                  to="#contact"
+                  onClick={() => {
+                    toggleMenu();
+                    scrollToSection("contact");
+                  }}
+                >
+                  Contact
+                </NavLink>
+              </Nav>
             </div>
-            <Nav className={`menu-items ${showMenu ? "show" : ""}`}>
-              <NavLink
-                to="#banner"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("banner");
-                }}
-              >
-                Home
-              </NavLink>
-              <NavLink
-                to="#about"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("about");
-                }}
-              >
-                About Me
-              </NavLink>
-              <NavLink
-                to="#services"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("services");
-                }}
-              >
-                Services
-              </NavLink>
-              <NavLink
-                to="#skills"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("skills");
-                }}
-              >
-                Skill
-              </NavLink>
-              <NavLink
-                to="#projects"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("projects");
-                }}
-              >
-                Projects
-              </NavLink>
-              <NavLink
-                to="#contact"
-                onClick={() => {
-                  toggleMenu();
-                  scrollToSection("contact");
-                }}
-              >
-                Contact
-              </NavLink>
-            </Nav>
             <ToggleMode></ToggleMode>
           </Navbar>
         </Container>

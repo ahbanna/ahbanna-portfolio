@@ -48,7 +48,7 @@
 }
 .about-right {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .about-right .experience-years {
   position: absolute;

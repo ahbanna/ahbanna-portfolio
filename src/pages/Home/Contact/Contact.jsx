@@ -21,8 +21,8 @@ const Contact = () => {
         </div>
         <div
           className="contact-form"
-          data-aos="fade-up"
-          data-aos-anchor-placement="top-center"
+          // data-aos="fade-up"
+          // data-aos-anchor-placement="top-center"
         >
           <Form>
             <div className="name-email">

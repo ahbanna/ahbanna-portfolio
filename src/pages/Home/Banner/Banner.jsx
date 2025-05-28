@@ -18,14 +18,14 @@ const Banner = () => {
             <img
               src={bannaImg}
               alt=""
-              data-aos="fade-right"
-              data-aos-duration="1500"
+              // data-aos="fade-right"
+              // data-aos-duration="1500"
             />
           </div>
           <div
             className="banner-text"
-            data-aos="fade-left"
-            data-aos-duration="1500"
+            // data-aos="fade-left"
+            // data-aos-duration="1500"
           >
             <p className="welcome-text">
               <img className="hero-hand-shake" src={heroHand} alt="" />
@@ -33,8 +33,8 @@ const Banner = () => {
             </p>
             <h2
               className="dev-name"
-              data-aos="zoom-in"
-              data-aos-duration="1500"
+              // data-aos="zoom-in"
+              // data-aos-duration="1500"
             >
               I'm Hasanul <span>Banna</span>
             </h2>
@@ -42,21 +42,22 @@ const Banner = () => {
               I'm{" "}
               <ReactTyped
                 strings={[
-                  "Frontend Developer",
-                  "Web Designer",
+                  "Web Developer",
+                  "Conversion Tracking Specialist",
                   "Web Programmer",
-                  "Full-stack Developer",
                 ]}
                 typeSpeed={100}
                 loop
               />
             </h3>
             <p>
-              I can provide clean code and pixel perfect design. I also make
-              website more & more interactive with web animations.
+              I build fast, interactive websites with clean, pixel-perfect code
+              using modern front-end and full-stack technologies. I also
+              specialize in conversion tracking using GA4, GTM, and Meta Pixel
+              to help businesses measure what matters.
             </p>
             <a
-              href="https://www.linkedin.com/in/ahbanna/"
+              href="https://wa.me/8801723659531"
               target="blank"
               className="cta-text"
             >
@@ -65,7 +66,7 @@ const Banner = () => {
             <div className="view-works-btn">
               <PrimaryButton
                 text="view my works"
-                link="https://www.youtube.com/"
+                link="https://www.behance.net/ahbanna/projects"
               ></PrimaryButton>
             </div>
             <div className="shape-img">

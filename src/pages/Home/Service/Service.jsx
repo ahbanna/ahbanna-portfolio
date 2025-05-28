@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import "./Service.css";
 import {
-  AiOutlineGlobal,
   AiOutlineShoppingCart,
   AiOutlineCode,
   AiOutlineApi,
-  AiOutlineLayout,
-  AiOutlineTool,
   AiFillSecurityScan,
+  AiOutlinePieChart,
 } from "react-icons/ai";
+import { BiLinkExternal, BiTrendingUp } from "react-icons/bi";
 import { MdOutlineManageHistory } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Container } from "react-bootstrap";
@@ -28,18 +27,18 @@ const Service = () => {
 
   const getIconComponent = (iconName) => {
     switch (iconName) {
-      case "AiOutlineGlobal":
-        return <AiOutlineGlobal size={32} />;
+      case "AiOutlinePieChart":
+        return <AiOutlinePieChart size={32} />;
       case "AiOutlineShoppingCart":
         return <AiOutlineShoppingCart size={32} />;
       case "AiOutlineCode":
         return <AiOutlineCode size={32} />;
       case "AiOutlineApi":
         return <AiOutlineApi size={32} />;
-      case "AiOutlineLayout":
-        return <AiOutlineLayout size={32} />;
-      case "AiOutlineTool":
-        return <AiOutlineTool size={32} />;
+      case "BiLinkExternal":
+        return <BiLinkExternal size={32} />;
+      case "BiTrendingUp":
+        return <BiTrendingUp size={32} />;
       case "AiFillSecurityScan":
         return <AiFillSecurityScan size={32} />;
       case "MdOutlineManageHistory":
@@ -61,8 +60,8 @@ const Service = () => {
             <div
               className="single-service"
               key={service.id}
-              data-aos="fade-left"
-              data-aos-duration="2000"
+              // data-aos="fade-left"
+              // data-aos-duration="2000"
             >
               <p className="service-number">{service.serviceNo}</p>
               {getIconComponent(service.icon)}

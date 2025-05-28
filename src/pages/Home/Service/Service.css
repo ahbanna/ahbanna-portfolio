@@ -23,6 +23,7 @@
   box-shadow: 0 4px 35px rgba(0, 0, 0, 0.2);
 }
 .single-service h3 {
+  font-size: 20px;
   margin: 20px 0;
   transition: 0.3s;
   color: var(--white);

@@ -3,8 +3,8 @@ const SectionTitle = ({ title, subtitle, des, text }) => {
   return (
     <div
       className="section-title-container"
-      data-aos="flip-up"
-      data-aos-duration="1000"
+      // data-aos="flip-up"
+      // data-aos-duration="1000"
     >
       <span>{text}</span>
       <h2 className="section-title">{title}</h2>
