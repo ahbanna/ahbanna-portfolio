@@ -18,14 +18,14 @@ const Banner = () => {
             <img
               src={bannaImg}
               alt=""
-              // data-aos="fade-right"
-              // data-aos-duration="1500"
+              data-aos="fade-right"
+              data-aos-duration="1500"
             />
           </div>
           <div
             className="banner-text"
-            // data-aos="fade-left"
-            // data-aos-duration="1500"
+            data-aos="fade-left"
+            data-aos-duration="1500"
           >
             <p className="welcome-text">
               <img className="hero-hand-shake" src={heroHand} alt="" />
@@ -33,8 +33,8 @@ const Banner = () => {
             </p>
             <h2
               className="dev-name"
-              // data-aos="zoom-in"
-              // data-aos-duration="1500"
+              data-aos="zoom-in"
+              data-aos-duration="1500"
             >
               I'm Hasanul <span>Banna</span>
             </h2>

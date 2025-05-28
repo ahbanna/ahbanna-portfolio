@@ -100,9 +100,10 @@
   color: var(--black);
   padding: 5px 15px 7px 15px;
   transition: all 0.3s ease 0s;
-  text-transform: uppercase;
   letter-spacing: 2px;
   display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
 }
 .nav-link:focus,
 .nav-link:hover {

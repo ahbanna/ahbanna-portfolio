@@ -126,5 +126,21 @@
     "category": "shopify",
     "description": "Lorem ipsum dolor sit amet",
     "liveLink": "https://aviarybeauty.com/"
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/1GNrMMNX/Screenshot-25.png",
+    "name": "Car",
+    "category": "shopify",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://therebeldecal.com/"
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/21Gfc1C7/Screenshot-26.png",
+    "name": "Car",
+    "category": "shopify",
+    "description": "Lorem ipsum dolor sit amet",
+    "liveLink": "https://drink-mana.com/"
   }
 ]

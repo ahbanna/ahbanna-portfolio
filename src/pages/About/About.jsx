@@ -23,8 +23,8 @@ const About = () => {
         <div className="about-area-content">
           <div
             className="about-left"
-            // data-aos="fade-right"
-            // data-aos-duration="1500"
+            data-aos="fade-right"
+            data-aos-duration="1500"
           >
             <p>
               Hi, my name is <strong>Hasanul Banna</strong> and I’m a Web
@@ -84,26 +84,29 @@ const About = () => {
           <div className="about-right">
             <div
               class="experience-years"
-              // data-aos="fade-down"
-              // data-aos-duration="3000"
+              data-aos="fade-down"
+              data-aos-duration="3000"
             >
               <b>3+</b>
               <h5>Years Of Experience</h5>
             </div>
             <div className="about-btn one">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              {/* <h6 data-aos="fade-down" data-aos-duration="800"> */}
-              <h6>Web Developer</h6>
+              <h6 data-aos="fade-down" data-aos-duration="800">
+                Web Developer
+              </h6>
             </div>
             <div className="about-btn two">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              {/* <h6 data-aos="fade-down" data-aos-duration="1000"> */}
-              <h6>Conversion Tracking</h6>
+              <h6 data-aos="fade-down" data-aos-duration="1000">
+                Conversion Tracking
+              </h6>
             </div>
             <div className="about-btn three">
               <img src={aboutBtnImg1} alt="" srcset="" />
-              {/* <h6 data-aos="fade-down" data-aos-duration="1200"> */}
-              <h6>WordPress, Shopify</h6>
+              <h6 data-aos="fade-down" data-aos-duration="1200">
+                WordPress, Shopify
+              </h6>
             </div>
             <div className="about-dot-shape one">
               <img src={abotDotShape} alt="" srcset="" />

@@ -160,4 +160,8 @@
   .name-email {
     grid-column-gap: 12px;
   }
+  .btn-submit {
+    padding: 8px 25px;
+    font-size: 14px;
+  }
 }

@@ -7,7 +7,7 @@
   /* display: none; */
 }
 .scrollIcon img {
-  height: 50px;
+  height: 45px;
   cursor: pointer;
   animation: bounce 2s infinite;
   background-color: var(--orange);

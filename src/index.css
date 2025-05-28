@@ -118,7 +118,9 @@ ol li {
   list-style: none;
   margin-bottom: 1rem;
 }
-
+.container {
+  overflow: hidden;
+}
 /* CSS for shape */
 .shape-two {
   animation: tp_zoom_in_out 2s linear infinite;
@@ -150,34 +152,28 @@ ol li {
 /* RESPONSIVE */
 /* Extra Large / Desktop device */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  p {
-    font-size: 15px;
-  }
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 800px;
-  }
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 /* Mobile device */
 @media (max-width: 575px) {
   p {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

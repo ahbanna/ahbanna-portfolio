@@ -29,8 +29,8 @@ const Skill = () => {
         ></SectionTitle>
         <div
           className="all-skill-imges"
-          // data-aos="zoom-out-up"
-          // data-aos-duration="1500"
+          data-aos="zoom-out-up"
+          data-aos-duration="1500"
         >
           {/* <div className="skill-item">
             <div className="skill-icon">
