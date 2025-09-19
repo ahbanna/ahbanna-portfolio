@@ -1,5 +1,5 @@
 import React from "react";
-import bannaImg from "../../../assets/banner/banna.jpg";
+import bannaImg from "../../../assets/banner/Banna.png";
 import heroHand from "../../../assets/banner/hero-hand.webp";
 import "./Banner.css";
 import { Container } from "react-bootstrap";

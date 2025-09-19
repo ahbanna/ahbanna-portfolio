@@ -36,25 +36,22 @@
 }
 /* Large device */
 @media (min-width: 992px) and (max-width: 1199px) {
-  .scrollIcon img {
-    height: 40px;
-  }
 }
 /* MD device */
 @media (min-width: 768px) and (max-width: 991px) {
   .scrollIcon img {
-    height: 35px;
+    height: 40px;
   }
 }
 /* SM devices */
 @media (min-width: 576px) and (max-width: 767px) {
   .scrollIcon img {
-    height: 30px;
+    height: 35px;
   }
 }
 /* Mobile device */
 @media (max-width: 575px) {
   .scrollIcon img {
-    height: 25px;
+    height: 32px;
   }
 }
